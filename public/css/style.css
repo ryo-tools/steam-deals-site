@@ -1,0 +1,163 @@
+/* ==========================================
+   全体ベース設定
+   ========================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================
+   ヘッダー
+   ========================================== */
+.header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  padding: 40px 0;
+  text-align: center;
+  border-bottom: 1px solid #334155;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* ==========================================
+   メインコンテンツ（グリッドレイアウト）
+   ========================================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+/* ==========================================
+   カードデザイン＆画像レイアウト調整
+   ========================================== */
+.card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #334155;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-color: #38bdf8;
+}
+
+/* 画像枠：画像を中央配置にし、枠いっぱいに拡大して左上寄せを防止 */
+.card-img {
+  width: 100%;
+  height: 200px;
+  background-color: #020617;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 枠全体を綺麗に埋める */
+  object-position: center; /* 常に画像の中心を表示 */
+  display: block;
+}
+
+/* ==========================================
+   カード本文・ボタン
+   ========================================== */
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.maker {
+  font-size: 0.8rem;
+  color: #38bdf8;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* タイトルを最大2行で揃える */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.title a {
+  color: #f1f5f9;
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: #38bdf8;
+}
+
+.action {
+  margin-top: auto;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #0369a1;
+}
+
+/* ==========================================
+   フッター
+   ========================================== */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #64748b;
+  font-size: 0.85rem;
+  border-top: 1px solid #334155;
+}

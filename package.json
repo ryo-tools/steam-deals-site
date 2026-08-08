@@ -1,0 +1,17 @@
+{
+  "name": "dlsite-auto-site-global",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/fetch-dlsite.js"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.20.36",
+    "@google/genai": "^2.16.0",
+    "axios": "^1.19.0",
+    "cheerio": "^1.2.0",
+    "fast-xml-parser": "^5.10.1",
+    "playwright": "^1.62.1",
+    "rss-parser": "^3.13.0"
+  }
+}
