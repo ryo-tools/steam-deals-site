@@ -1,4 +1,4 @@
-name: Auto Build DLsite Global Site
+name: Auto Build Steam Game Deals Site
 
 on:
   schedule:
@@ -24,15 +24,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps chromium
+      # Playwrightは不要のため削除（動作高速化）
 
-      - name: Run Build Script (Generate Global SEO Pages)
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node scripts/fetch-dlsite.js
+      - name: Run Build Script (Generate Steam Game Deals Pages)
+        run: node scripts/fetch-deals.js # ※ご自身が保存したスクリプトファイル名に合わせて変更してください
 
       - name: Post to Bluesky (Global Auto-Post)
+        if: env.BLUESKY_HANDLE != '' && env.BLUESKY_PASSWORD != ''
         env:
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
@@ -45,10 +43,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update DLsite Global content [skip ci]" && git pull --rebase origin main && git push origin main)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update Steam Game Deals content [skip ci]" && git pull --rebase origin main && git push origin main)
 
       - name: Notify Discord for X Post Stock Global (with Image)
-        if: success()
+        if: success() && env.DISCORD_WEBHOOK_URL != ''
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: node scripts/notify-discord.js
