@@ -5,16 +5,16 @@ import { execSync } from 'child_process';
 // 自身のCloudflare Pagesドメイン名
 const DOMAIN = 'https://steam-deals-site.pages.dev'; 
 
-// CheapShark API: Steam(storeID=1)のセール中・割引率順データ
-const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=50&sortBy=Savings';
+// CheapShark API: Steam(storeID=1)のセール中データ
+const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=50';
 
 async function fetchCheapSharkDeals() {
   console.log('CheapShark APIからSteamセールデータを取得中...');
   
   try {
-    // GitHub Actions環境のIP/TLS制限を回避するため curl コマンドで通信
+    // curl コマンドで安全にレスポンスを取得
     const curlCommand = `curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" "${API_URL}"`;
-    const stdout = execSync(curlCommand, { encoding: 'utf-8', timeout: 10000 });
+    const stdout = execSync(curlCommand, { encoding: 'utf-8', timeout: 15000 });
 
     if (!stdout || stdout.trim().startsWith('<')) {
       throw new Error('APIからHTMLエラーレスポンスが返却されました。');
@@ -22,10 +22,16 @@ async function fetchCheapSharkDeals() {
 
     const deals = JSON.parse(stdout);
 
+    // 返却データが配列でない場合はエラーとして扱う
+    if (!Array.isArray(deals)) {
+      console.error('APIレスポンス詳細:', stdout.slice(0, 300));
+      throw new Error('APIからの返却データが配列形式ではありませんでした。');
+    }
+
     // 海外ユーザー向けに整形
     const items = deals.slice(0, 50).map(deal => {
-      const savingsNum = Math.round(deal.savings);
-      const salePriceNum = parseFloat(deal.salePrice);
+      const savingsNum = Math.round(parseFloat(deal.savings || 0));
+      const salePriceNum = parseFloat(deal.salePrice || 0);
       
       return {
         id: deal.dealID,
