@@ -12,8 +12,11 @@ async function fetchCheapSharkDeals() {
   console.log('CheapShark APIからSteamセールデータを取得中...');
   
   try {
-    // curl コマンドで安全にレスポンスを取得
-    const curlCommand = `curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" "${API_URL}"`;
+    // APIの要求仕様に従った独自のUser-Agentヘッダー（アプリ名/バージョン+連絡先）
+    const customUserAgent = 'SteamDealsBot/1.0 (https://github.com/mryo0310)';
+    
+    // curl コマンドで指定のUser-Agentを付与して実行
+    const curlCommand = `curl -s -L -A "${customUserAgent}" "${API_URL}"`;
     const stdout = execSync(curlCommand, { encoding: 'utf-8', timeout: 15000 });
 
     if (!stdout || stdout.trim().startsWith('<')) {
