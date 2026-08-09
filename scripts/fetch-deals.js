@@ -4,35 +4,31 @@ import { execSync } from 'child_process';
 
 const DOMAIN = 'https://steam-deals-site.pages.dev'; 
 
-// 【普遍値】亮さんのAwin Publisher ID（これだけは変わらないため定数化）
+// 【不変値】亮さんのAwin Publisher ID
 const AWIN_PUBLISHER_ID = '3028347';
 
 // storeID=15 (Fanatical) 指定
 const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=15&lowerPrice=0.50&upperPrice=50&sortBy=Savings';
 
 /**
- * CheapSharkの動的リダイレクトを解析し、最新のAwin Merchant IDを抽出する関数
+ * CheapSharkのレスポンスから最新の Awin Merchant ID を安全に抽出する
  */
-async function getDynamicMerchantId(sampleDealId) {
+function getDynamicMerchantId(sampleDealId) {
   try {
-    const checkUrl = `https://www.cheapshark.com/redirect?dealID=${sampleDealId}`;
-    // リダイレクトを追跡せず、HTTPヘッダ（Location）だけを取得する
-    const response = await fetch(checkUrl, {
-      redirect: 'manual',
-      headers: { 'User-Agent': 'SteamDealsBot/1.0' }
-    });
+    const target = `https://www.cheapshark.com/redirect?dealID=${sampleDealId}`;
+    // curlでレスポンスヘッダ（Location）を取得
+    const headerOutput = execSync(`curl -s -I -A "Mozilla/5.0" "${target}"`, { encoding: 'utf-8', timeout: 5000 });
     
-    const location = response.headers.get('location');
-    if (location && location.includes('awinmid=')) {
-      const url = new URL(location);
-      const dynamicMid = url.searchParams.get('awinmid');
-      console.log(`[自動追従] CheapSharkヘッダ解析完了: 最新のAwin Merchant ID [${dynamicMid}] を抽出しました。`);
-      return dynamicMid;
+    const match = headerOutput.match(/awinmid=(\d+)/i);
+    if (match && match[1]) {
+      const mid = match[1];
+      console.log(`[自動検証] 最新のAwin Merchant ID [${mid}] の取得に成功しました。`);
+      return mid;
     }
   } catch (error) {
-    console.warn('[警告] 最新Merchant IDの動的抽出に失敗しました:', error.message);
+    console.warn('[警告] Awin Merchant IDの取得に失敗しました。安全のため直リンクモードで稼働します。');
   }
-  return null; // 抽出失敗時はnullを返す
+  return null;
 }
 
 async function fetchCheapSharkDeals() {
@@ -53,8 +49,8 @@ async function fetchCheapSharkDeals() {
       throw new Error('APIからの返却データが空、または配列形式ではありません。');
     }
 
-    // 【可変値の動的取得】先頭のデータを使って最新のMerchant IDを取得する
-    const latestMerchantId = await getDynamicMerchantId(deals[0].dealID);
+    // 最新 Merchant ID の自動取得を試行
+    const activeMerchantId = getDynamicMerchantId(deals[0].dealID);
 
     const items = deals
       .filter(deal => Math.round(parseFloat(deal.savings || 0)) < 100)
@@ -63,15 +59,15 @@ async function fetchCheapSharkDeals() {
         const savingsNum = Math.round(parseFloat(deal.savings || 0));
         const salePriceNum = parseFloat(deal.salePrice || 0);
         
-        // CheapSharkの直リンク
+        // CheapSharkのリダイレクトURL
         const rawRedirectUrl = `https://www.cheapshark.com/redirect?dealID=${deal.dealID}`;
         
         let finalLink = rawRedirectUrl;
 
-        // 動的抽出に成功していれば、亮さんのIDを組み込んだAwinアフィリエイトリンクを生成
-        if (latestMerchantId) {
-          const cleanUrl = rawRedirectUrl.replace(/%2F/g, '/'); // 二重エンコード防止
-          finalLink = `https://www.awin1.com/cread.php?awinmid=${latestMerchantId}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(cleanUrl)}`;
+        // 有効なMerchant IDが取れている場合のみAwinリンクを組み立てる（絶対にclosedMerchantを出さない）
+        if (activeMerchantId) {
+          const cleanUrl = rawRedirectUrl.replace(/%2F/g, '/');
+          finalLink = `https://www.awin1.com/cread.php?awinmid=${activeMerchantId}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(cleanUrl)}`;
         }
 
         return {
@@ -89,7 +85,7 @@ async function fetchCheapSharkDeals() {
         };
       });
 
-    console.log(`データ構築成功: ${items.length} 件 (適用Merchant ID: ${latestMerchantId || '抽出失敗/直リンク化'})`);
+    console.log(`データ構築成功: ${items.length} 件 (使用リンク構造: ${activeMerchantId ? 'Awin (MID: ' + activeMerchantId + ')' : 'CheapShark直リンク'})`);
     return items;
   } catch (error) {
     console.error('CheapShark API取得エラー:', error.message || error);
@@ -279,7 +275,7 @@ Sitemap: ${DOMAIN}/sitemap.xml`;
   // JSON形式データ書き出し
   fs.writeFileSync(path.join(publicDir, 'deals.json'), JSON.stringify(items, null, 2));
 
-  console.log('ビルド完了: HTTPヘッダ解析による完全自動追従版の生成に成功しました。');
+  console.log('ビルド完了: 安全Fallback機能付きスクリプトの生成に成功しました。');
 }
 
 main();
