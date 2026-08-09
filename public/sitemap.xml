@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dlsite-auto-site-global.pages.dev/</loc>
+    <loc>https://steam-deals-site.pages.dev/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dlsite-auto-site-global.pages.dev/asmr/</loc>
+    <loc>https://steam-deals-site.pages.dev/huge-discounts/</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dlsite-auto-site-global.pages.dev/manga/</loc>
+    <loc>https://steam-deals-site.pages.dev/under-5-dollars/</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dlsite-auto-site-global.pages.dev/game/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dlsite-auto-site-global.pages.dev/cg/</loc>
+    <loc>https://steam-deals-site.pages.dev/under-10-dollars/</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
