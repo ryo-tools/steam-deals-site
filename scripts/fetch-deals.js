@@ -1,37 +1,26 @@
 import fs from 'fs';
 import path from 'path';
+import { execSync } from 'child_process';
 
 // 自身のCloudflare Pagesドメイン名
 const DOMAIN = 'https://steam-deals-site.pages.dev'; 
 
-// CheapShark API: Steam(storeID=1)のセール中・割引率順データを一括取得
+// CheapShark API: Steam(storeID=1)のセール中・割引率順データ
 const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=50&sortBy=Savings';
 
 async function fetchCheapSharkDeals() {
   console.log('CheapShark APIからSteamセールデータを取得中...');
   
   try {
-    // API・Cloudflareのブロック（400/403）を確実に回避するブラウザヘッダー
-    const response = await fetch(API_URL, {
-      method: 'GET',
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-        'Accept': 'application/json, text/plain, */*',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Cache-Control': 'no-cache',
-        'Pragma': 'no-cache',
-        'Sec-Ch-Ua': '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
-        'Sec-Ch-Ua-Mobile': '?0',
-        'Sec-Ch-Ua-Platform': '"Windows"',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'cross-site'
-      }
-    });
+    // GitHub Actions環境のIP/TLS制限を回避するため curl コマンドで通信
+    const curlCommand = `curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" "${API_URL}"`;
+    const stdout = execSync(curlCommand, { encoding: 'utf-8', timeout: 10000 });
 
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-    
-    const deals = await response.json();
+    if (!stdout || stdout.trim().startsWith('<')) {
+      throw new Error('APIからHTMLエラーレスポンスが返却されました。');
+    }
+
+    const deals = JSON.parse(stdout);
 
     // 海外ユーザー向けに整形
     const items = deals.slice(0, 50).map(deal => {
@@ -55,7 +44,7 @@ async function fetchCheapSharkDeals() {
     console.log(`データ取得成功: ${items.length} 件`);
     return items;
   } catch (error) {
-    console.error('CheapShark API取得エラー:', error);
+    console.error('CheapShark API取得エラー:', error.message || error);
     return [];
   }
 }
