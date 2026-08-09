@@ -5,17 +5,15 @@ import { execSync } from 'child_process';
 // 自身のCloudflare Pagesドメイン名
 const DOMAIN = 'https://steam-deals-site.pages.dev'; 
 
-// CheapShark API: Steam(storeID=1)のセール中データ
-const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=50';
+// CheapShark API: 複数の主要正規キーショップ（Steam, GMG, Fanatical, Humble）から有料セールを取得
+// storeID: 1=Steam, 2=GreenManGaming, 15=Fanatical, 11=HumbleStore
+const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=1,2,15,11&upperPrice=50&sortBy=Savings';
 
 async function fetchCheapSharkDeals() {
-  console.log('CheapShark APIからSteamセールデータを取得中...');
+  console.log('CheapShark APIからアフィリエイト対象セールデータを取得中...');
   
   try {
-    // APIの要求仕様に従った独自のUser-Agentヘッダー（アプリ名/バージョン+連絡先）
     const customUserAgent = 'SteamDealsBot/1.0 (https://github.com/mryo0310)';
-    
-    // curl コマンドで指定のUser-Agentを付与して実行
     const curlCommand = `curl -s -L -A "${customUserAgent}" "${API_URL}"`;
     const stdout = execSync(curlCommand, { encoding: 'utf-8', timeout: 15000 });
 
@@ -25,14 +23,20 @@ async function fetchCheapSharkDeals() {
 
     const deals = JSON.parse(stdout);
 
-    // 返却データが配列でない場合はエラーとして扱う
     if (!Array.isArray(deals)) {
       console.error('APIレスポンス詳細:', stdout.slice(0, 300));
       throw new Error('APIからの返却データが配列形式ではありませんでした。');
     }
 
-    // 海外ユーザー向けに整形
-    const items = deals.slice(0, 50).map(deal => {
+    // 【CVR最大化フィルタ】
+    // 100%OFF（無料）や $0.50 未満の無報酬商品を排除し、明確な購買意図を持つ有料セールのみ抽出
+    const filteredDeals = deals.filter(deal => {
+      const salePrice = parseFloat(deal.salePrice || 0);
+      const savings = Math.round(parseFloat(deal.savings || 0));
+      return salePrice >= 0.50 && savings < 100;
+    });
+
+    const items = filteredDeals.slice(0, 50).map(deal => {
       const savingsNum = Math.round(parseFloat(deal.savings || 0));
       const salePriceNum = parseFloat(deal.salePrice || 0);
       
@@ -46,11 +50,12 @@ async function fetchCheapSharkDeals() {
         savings: `${savingsNum}% OFF`,
         thumb: deal.thumb,
         steamAppID: deal.steamAppID,
+        storeID: deal.storeID,
         link: `https://www.cheapshark.com/redirect?dealID=${deal.dealID}`
       };
     });
 
-    console.log(`データ取得成功: ${items.length} 件`);
+    console.log(`データ取得成功（収益化対象）: ${items.length} 件`);
     return items;
   } catch (error) {
     console.error('CheapShark API取得エラー:', error.message || error);
@@ -130,7 +135,7 @@ function generateHTML(title, description, items, breadcrumbs) {
               <span class="sale-price">${item.salePrice}</span>
               <span class="normal-price">${item.normalPrice}</span>
             </div>
-            <a href="${item.link}" class="btn" target="_blank" rel="noopener noreferrer">Get Deal on Steam / Store</a>
+            <a href="${item.link}" class="btn" target="_blank" rel="noopener noreferrer">Get Deal on Store</a>
           </div>
         </div>
       `).join('')}
@@ -170,8 +175,8 @@ async function main() {
 
   // 1. トップページ（全体セールまとめ）
   const topHTML = generateHTML(
-    'Steam Game Deals & Historical Low Prices',
-    'Find the best Steam PC game deals, deepest discounts, and historical low price alerts updated daily.',
+    'Steam PC Game Deals & Historical Low Prices',
+    'Find the best PC game deals, deepest discounts, and price alerts across major key stores.',
     items,
     [{ name: 'Home', path: '/' }]
   );
@@ -180,18 +185,18 @@ async function main() {
   // 2. 80%以上オフ特化ページ
   const hugeDiscountItems = items.filter(item => item.savingsNum >= 80);
   const hugeDiscountsHTML = generateHTML(
-    '80% OFF or More | Steam PC Game Deals',
-    'Massive discount PC games on Steam. Grab titles at 80% OFF or higher right now!',
+    '80% OFF or More | PC Game Deals',
+    'Massive discount PC games. Grab Steam keys at 80% OFF or higher right now!',
     hugeDiscountItems.length > 0 ? hugeDiscountItems : items,
     [{ name: 'Home', path: '/' }, { name: '80%+ OFF', path: '/huge-discounts/' }]
   );
   fs.writeFileSync(path.join(hugeDiscountsDir, 'index.html'), hugeDiscountsHTML);
 
-  // 3. 5ドル以下（格安インディー・セール）特化ページ
+  // 3. 5ドル以下特化ページ
   const under5Items = items.filter(item => item.salePriceNum <= 5.00);
   const under5HTML = generateHTML(
-    'Cheap Steam Games Under $5',
-    'Best budget PC games on Steam for under $5. Incredible games at bargain prices!',
+    'Cheap PC Games Under $5',
+    'Best budget PC games for under $5. Incredible game deals at bargain prices!',
     under5Items.length > 0 ? under5Items : items,
     [{ name: 'Home', path: '/' }, { name: 'Under $5', path: '/under-5-dollars/' }]
   );
@@ -200,8 +205,8 @@ async function main() {
   // 4. 10ドル以下特化ページ
   const under10Items = items.filter(item => item.salePriceNum <= 10.00);
   const under10HTML = generateHTML(
-    'Steam PC Games Under $10',
-    'Top-tier PC games under $10 on Steam. High value discounts updated daily.',
+    'PC Games Under $10',
+    'Top-tier PC games under $10. High value discounts updated daily.',
     under10Items.length > 0 ? under10Items : items,
     [{ name: 'Home', path: '/' }, { name: 'Under $10', path: '/under-10-dollars/' }]
   );
@@ -238,10 +243,10 @@ Allow: /
 Sitemap: ${DOMAIN}/sitemap.xml`;
   fs.writeFileSync(path.join(publicDir, 'robots.txt'), robotsTxt);
 
-  // JSON形式データも書き出し（Bluesky自動投稿等から参照可能）
+  // JSON形式データ書き出し
   fs.writeFileSync(path.join(publicDir, 'deals.json'), JSON.stringify(items, null, 2));
 
-  console.log('ビルド完了: Steam海外セール特化サイトの生成に成功しました。');
+  console.log('ビルド完了: 収益化最適化版サイトの生成に成功しました。');
 }
 
 main();
