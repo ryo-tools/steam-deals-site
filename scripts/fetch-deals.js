@@ -11,13 +11,12 @@ const AWIN_PUBLISHER_ID = '3028347';
 const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=15&lowerPrice=0.50&upperPrice=50&sortBy=Savings';
 
 /**
- * CheapSharkのクッションページを解析し、
- * 「他人のID（横取り）」を排除した「純粋なFanatical直URL」を抽出して亮さんのアフィリンクを再構築する
+ * CheapSharkのリダイレクトを解析し、不純な他社アフィリエイトパラメータを全削除した上で
+ * 亮さんのAwin ID（3028347）を確実に付与した純粋なアフィリエイトリンクを生成する
  */
 async function resolveAffiliateLink(dealID) {
   const fallbackUrl = `https://www.cheapshark.com/redirect?dealID=${dealID}`;
   try {
-    // 実際にブラウザが踏むリダイレクトを裏側で辿る（遷移はさせずヘッダだけ抜く）
     const response = await fetch(fallbackUrl, {
       redirect: 'manual',
       headers: { 'User-Agent': 'SteamDealsBot/1.0' }
@@ -25,21 +24,22 @@ async function resolveAffiliateLink(dealID) {
     
     const location = response.headers.get('location');
     
-    // CheapSharkがAwinリンクを返してきた場合、中身を分解して亮さんのIDにすり替える
     if (location && location.includes('awin1.com')) {
       const url = new URL(location);
-      const awinmid = url.searchParams.get('awinmid'); // 最新のストアID
-      const ued = url.searchParams.get('ued');         // CheapSharkが隠しているFanatical直URL
+      const awinmid = url.searchParams.get('awinmid'); // 最新のMerchant ID (例: 118821)
+      const rawUed = url.searchParams.get('ued');       // CheapSharkが付与したパラメータ付きURL
       
-      if (awinmid && ued) {
-        // 亮さんのPublisherID(3028347)と、直URLを結合して正しいアフィリンクを生成
-        return `https://www.awin1.com/cread.php?awinmid=${awinmid}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(ued)}`;
+      if (awinmid && rawUed) {
+        // 【重要】CheapSharkのアフィリエイトパラメータ(?utm_source=...等)を全削除して純粋な商品URLにする
+        const cleanProductUrl = rawUed.split('?')[0]; 
+        
+        // 亮さんのPublisher ID(3028347)で完全に上書きしたAwinリンクを再構築
+        return `https://www.awin1.com/cread.php?awinmid=${awinmid}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(cleanProductUrl)}`;
       }
     }
   } catch (error) {
     // ネットワークエラー等は無視してフォールバックへ
   }
-  // 抽出失敗時はエラーでサイトを壊さないよう、やむを得ずCheapSharkリンクへ逃がす
   return fallbackUrl;
 }
 
@@ -68,14 +68,13 @@ async function fetchCheapSharkDeals() {
     const items = [];
     let overrideCount = 0;
 
-    console.log(`全 ${top50.length} 件のリンクからアフィリエイトIDの抽出・すり替えを実行します...`);
+    console.log(`全 ${top50.length} 件のリンクから不純パラメータを削除し、純粋なアフィリエイトリンクへの再構築を実行します...`);
 
-    // API制限（429エラー）を避けるため、1件ずつ順番にリンクを解析
     for (const deal of top50) {
       const savingsNum = Math.round(parseFloat(deal.savings || 0));
       const salePriceNum = parseFloat(deal.salePrice || 0);
       
-      // ここで横取りIDを排除し、亮さんのIDリンクを生成
+      // 横取りパラメータをクレンジングして亮さんのIDで再生成
       const finalLink = await resolveAffiliateLink(deal.dealID);
       if (finalLink.includes(AWIN_PUBLISHER_ID)) overrideCount++;
 
@@ -94,7 +93,7 @@ async function fetchCheapSharkDeals() {
       });
     }
 
-    console.log(`データ構築成功: ${items.length} 件中 ${overrideCount} 件を亮さんのAwin ID (${AWIN_PUBLISHER_ID}) に書き換えました。`);
+    console.log(`データ構築成功: ${items.length} 件中 ${overrideCount} 件のクレンジング＆亮さんのAwin ID (${AWIN_PUBLISHER_ID}) 紐付けに成功しました。`);
     return items;
   } catch (error) {
     console.error('CheapShark API取得エラー:', error.message || error);
@@ -284,7 +283,7 @@ Sitemap: ${DOMAIN}/sitemap.xml`;
   // JSON形式データ書き出し
   fs.writeFileSync(path.join(publicDir, 'deals.json'), JSON.stringify(items, null, 2));
 
-  console.log('ビルド完了: 報酬すり替え防止・完全アフィリエイト化コードでの生成に成功しました。');
+  console.log('ビルド完了: URLパラメータクレンジング完了版の生成に成功しました。');
 }
 
 main();
