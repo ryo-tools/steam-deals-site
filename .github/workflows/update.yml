@@ -28,7 +28,7 @@ jobs:
         run: node scripts/fetch-deals.js
 
       - name: Post to Bluesky (Global Auto-Post)
-        if: ${{ secrets.BLUESKY_HANDLE != '' && secrets.BLUESKY_PASSWORD != '' }}
+        if: env.BLUESKY_HANDLE != '' && env.BLUESKY_PASSWORD != ''
         env:
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
@@ -44,7 +44,7 @@ jobs:
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update Steam Game Deals content [skip ci]" && git pull --rebase origin main && git push origin main)
 
       - name: Notify Discord for X Post Stock Global
-        if: ${{ success() && secrets.DISCORD_WEBHOOK_URL != '' }}
+        if: success() && env.DISCORD_WEBHOOK_URL != ''
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: node scripts/notify-discord.js
