@@ -2,12 +2,11 @@ import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
 
-// 自身のCloudflare Pagesドメイン名
 const DOMAIN = 'https://steam-deals-site.pages.dev'; 
 
-// CheapShark API: 複数の主要正規キーショップ（Steam, GMG, Fanatical, Humble）から有料セールを取得
-// storeID: 1=Steam, 2=GreenManGaming, 15=Fanatical, 11=HumbleStore
-const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=1,2,15,11&upperPrice=50&sortBy=Savings';
+// 修正点1: storeID=15 (Fanatical) 単一指定でアフィリエイト成果を確実にする
+// 修正点2: lowerPrice=0.50 を追加し、API側で無料・超格安ゲームを最初から弾く
+const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=15&lowerPrice=0.50&upperPrice=50&sortBy=Savings';
 
 async function fetchCheapSharkDeals() {
   console.log('CheapShark APIからアフィリエイト対象セールデータを取得中...');
@@ -28,32 +27,28 @@ async function fetchCheapSharkDeals() {
       throw new Error('APIからの返却データが配列形式ではありませんでした。');
     }
 
-    // 【CVR最大化フィルタ】
-    // 100%OFF（無料）や $0.50 未満の無報酬商品を排除し、明確な購買意図を持つ有料セールのみ抽出
-    const filteredDeals = deals.filter(deal => {
-      const salePrice = parseFloat(deal.salePrice || 0);
-      const savings = Math.round(parseFloat(deal.savings || 0));
-      return salePrice >= 0.50 && savings < 100;
-    });
-
-    const items = filteredDeals.slice(0, 50).map(deal => {
-      const savingsNum = Math.round(parseFloat(deal.savings || 0));
-      const salePriceNum = parseFloat(deal.salePrice || 0);
-      
-      return {
-        id: deal.dealID,
-        title: deal.title,
-        salePrice: `$${deal.salePrice}`,
-        normalPrice: `$${deal.normalPrice}`,
-        salePriceNum: salePriceNum,
-        savingsNum: savingsNum,
-        savings: `${savingsNum}% OFF`,
-        thumb: deal.thumb,
-        steamAppID: deal.steamAppID,
-        storeID: deal.storeID,
-        link: `https://www.cheapshark.com/redirect?dealID=${deal.dealID}`
-      };
-    });
+    // 修正点3: API側で下限価格を設定したため、ここでは単純に100%OFF表記のバグ除外と整形のみ行う
+    const items = deals
+      .filter(deal => Math.round(parseFloat(deal.savings || 0)) < 100)
+      .slice(0, 50)
+      .map(deal => {
+        const savingsNum = Math.round(parseFloat(deal.savings || 0));
+        const salePriceNum = parseFloat(deal.salePrice || 0);
+        
+        return {
+          id: deal.dealID,
+          title: deal.title,
+          salePrice: `$${deal.salePrice}`,
+          normalPrice: `$${deal.normalPrice}`,
+          salePriceNum: salePriceNum,
+          savingsNum: savingsNum,
+          savings: `${savingsNum}% OFF`,
+          thumb: deal.thumb,
+          steamAppID: deal.steamAppID,
+          storeID: deal.storeID,
+          link: `https://www.cheapshark.com/redirect?dealID=${deal.dealID}` // storeID=15ならFanaticalへ飛ぶ
+        };
+      });
 
     console.log(`データ取得成功（収益化対象）: ${items.length} 件`);
     return items;
@@ -63,7 +58,6 @@ async function fetchCheapSharkDeals() {
   }
 }
 
-// 英語・ダークモード寄りのクールなスタイリング（PCゲーマー向け）
 const commonStyle = `
   * { box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #0b0e14; color: #c5d0e6; margin: 0; padding: 0; line-height: 1.5; }
@@ -149,7 +143,7 @@ function generateHTML(title, description, items, breadcrumbs) {
       <a href="/under-5-dollars/">Under $5</a> | 
       <a href="/under-10-dollars/">Under $10</a>
     </p>
-    <p>&copy; 2026 Steam PC Game Deals & Historical Low Price Tracker</p>
+    <p>&copy; 2026 PC Game Deals & Historical Low Price Tracker</p>
   </footer>
 </body>
 </html>`;
@@ -173,10 +167,10 @@ async function main() {
   if (!fs.existsSync(under5Dir)) fs.mkdirSync(under5Dir, { recursive: true });
   if (!fs.existsSync(under10Dir)) fs.mkdirSync(under10Dir, { recursive: true });
 
-  // 1. トップページ（全体セールまとめ）
+  // 1. トップページ
   const topHTML = generateHTML(
-    'Steam PC Game Deals & Historical Low Prices',
-    'Find the best PC game deals, deepest discounts, and price alerts across major key stores.',
+    'PC Game Deals & Historical Low Prices',
+    'Find the best PC game deals, deepest discounts, and price alerts.',
     items,
     [{ name: 'Home', path: '/' }]
   );
@@ -186,7 +180,7 @@ async function main() {
   const hugeDiscountItems = items.filter(item => item.savingsNum >= 80);
   const hugeDiscountsHTML = generateHTML(
     '80% OFF or More | PC Game Deals',
-    'Massive discount PC games. Grab Steam keys at 80% OFF or higher right now!',
+    'Massive discount PC games. Grab keys at 80% OFF or higher right now!',
     hugeDiscountItems.length > 0 ? hugeDiscountItems : items,
     [{ name: 'Home', path: '/' }, { name: '80%+ OFF', path: '/huge-discounts/' }]
   );
