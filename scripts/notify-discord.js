@@ -4,14 +4,15 @@ import path from 'path';
 async function sendDiscordNotification() {
   const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
   if (!webhookUrl) {
-    console.error('DISCORD_WEBHOOK_URL is not set.');
-    process.exit(1);
+    console.error('エラー: DISCORD_WEBHOOK_URL が設定されていません。');
+    return;
   }
 
-  const dataPath = path.join(process.cwd(), 'public', 'data.json');
+  // ファイル名を deals.json（または運用データ）に合わせる
+  const dataPath = path.join(process.cwd(), 'public', 'deals.json');
   if (!fs.existsSync(dataPath)) {
-    console.error('public/data.json not found.');
-    process.exit(0);
+    console.error('エラー: public/deals.json が見つかりません。');
+    return;
   }
 
   try {
@@ -19,12 +20,13 @@ async function sendDiscordNotification() {
     const items = JSON.parse(rawData);
 
     if (!items || items.length === 0) {
-      console.log('No data available for notification.');
-      process.exit(0);
+      console.log('通知対象のデータがありません。');
+      return;
     }
 
-    // 先頭の1件（最新作品）をピックアップ
-    const item = items[0];
+    // 毎回同じ作品にならないようランダムピックアップ
+    const randomIndex = Math.floor(Math.random() * items.length);
+    const item = items[randomIndex];
 
     // ジャンルに応じた英語ハッシュタグの設定
     let hashtag = '#DLsite #JNSFW';
@@ -41,15 +43,16 @@ async function sendDiscordNotification() {
     }
 
     const title = "【X Post Stock (Global/EN)】";
-    const body = `${item.title}\nCircle: ${item.maker} (${item.price})\n\nCheck out this recommended work on DLsite! Perfect for relaxation.🎧\n\n${hashtag}\n👇 Details & Link in reply`;
-    const replyUrl = item.link;
-    const imageUrl = item.image;
+    const body = `${item.title}\nCircle: ${item.maker} (${item.price || item.salePrice})\n\nCheck out this recommended work on DLsite! Perfect for relaxation.🎧\n\n${hashtag}\n👇 Details & Link in reply`;
+    const replyUrl = item.link || item.url;
+    const imageUrl = item.image || item.thumb;
 
     const payload = {
-      content: `${title}\n\n**■ Main Tweet (Copy & Paste)**\n${body}\n\n-------------------\n**■ Reply URL**\n${replyUrl}`,
+      content: `${title}\n\n**■ Main Tweet (Copy & Paste)**\n\`\`\`\n${body}\n\`\`\`\n-------------------\n**■ Reply URL**\n${replyUrl}`,
       embeds: [
         {
           title: item.title,
+          color: 0x00fff0,
           image: {
             url: imageUrl
           }
@@ -66,12 +69,12 @@ async function sendDiscordNotification() {
     });
 
     if (!response.ok) {
-      console.error('Discord notification failed:', response.statusText);
+      console.error('Discord通知失敗:', response.statusText);
     } else {
-      console.log('Discord notification sent successfully with image (Global)!');
+      console.log(`Discord通知完了: ${item.title}`);
     }
   } catch (error) {
-    console.error('Discord notification error:', error);
+    console.error('Discord通知エラー:', error);
   }
 }
 

@@ -4,15 +4,39 @@ import { execSync } from 'child_process';
 
 const DOMAIN = 'https://steam-deals-site.pages.dev'; 
 
-// Awin Publisher ID & Fanatical Merchant ID
+// 【普遍値】亮さんのAwin Publisher ID（これだけは変わらないため定数化）
 const AWIN_PUBLISHER_ID = '3028347';
-const FANATICAL_MERCHANT_ID = '6201';
 
 // storeID=15 (Fanatical) 指定
 const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=15&lowerPrice=0.50&upperPrice=50&sortBy=Savings';
 
+/**
+ * CheapSharkの動的リダイレクトを解析し、最新のAwin Merchant IDを抽出する関数
+ */
+async function getDynamicMerchantId(sampleDealId) {
+  try {
+    const checkUrl = `https://www.cheapshark.com/redirect?dealID=${sampleDealId}`;
+    // リダイレクトを追跡せず、HTTPヘッダ（Location）だけを取得する
+    const response = await fetch(checkUrl, {
+      redirect: 'manual',
+      headers: { 'User-Agent': 'SteamDealsBot/1.0' }
+    });
+    
+    const location = response.headers.get('location');
+    if (location && location.includes('awinmid=')) {
+      const url = new URL(location);
+      const dynamicMid = url.searchParams.get('awinmid');
+      console.log(`[自動追従] CheapSharkヘッダ解析完了: 最新のAwin Merchant ID [${dynamicMid}] を抽出しました。`);
+      return dynamicMid;
+    }
+  } catch (error) {
+    console.warn('[警告] 最新Merchant IDの動的抽出に失敗しました:', error.message);
+  }
+  return null; // 抽出失敗時はnullを返す
+}
+
 async function fetchCheapSharkDeals() {
-  console.log('CheapShark APIからアフィリエイト対象セールデータを取得中...');
+  console.log('CheapShark APIからセールデータを取得中...');
   
   try {
     const customUserAgent = 'SteamDealsBot/1.0 (https://github.com/mryo0310)';
@@ -25,10 +49,12 @@ async function fetchCheapSharkDeals() {
 
     const deals = JSON.parse(stdout);
 
-    if (!Array.isArray(deals)) {
-      console.error('APIレスポンス詳細:', stdout.slice(0, 300));
-      throw new Error('APIからの返却データが配列形式ではありませんでした。');
+    if (!Array.isArray(deals) || deals.length === 0) {
+      throw new Error('APIからの返却データが空、または配列形式ではありません。');
     }
+
+    // 【可変値の動的取得】先頭のデータを使って最新のMerchant IDを取得する
+    const latestMerchantId = await getDynamicMerchantId(deals[0].dealID);
 
     const items = deals
       .filter(deal => Math.round(parseFloat(deal.savings || 0)) < 100)
@@ -37,11 +63,16 @@ async function fetchCheapSharkDeals() {
         const savingsNum = Math.round(parseFloat(deal.savings || 0));
         const salePriceNum = parseFloat(deal.salePrice || 0);
         
-        // CheapSharkのリダイレクトURL
+        // CheapSharkの直リンク
         const rawRedirectUrl = `https://www.cheapshark.com/redirect?dealID=${deal.dealID}`;
         
-        // Awinアフィリエイトトラッキングリンクへの変換
-        const affiliateLink = `https://www.awin1.com/cread.php?awinmid=${FANATICAL_MERCHANT_ID}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(rawRedirectUrl)}`;
+        let finalLink = rawRedirectUrl;
+
+        // 動的抽出に成功していれば、亮さんのIDを組み込んだAwinアフィリエイトリンクを生成
+        if (latestMerchantId) {
+          const cleanUrl = rawRedirectUrl.replace(/%2F/g, '/'); // 二重エンコード防止
+          finalLink = `https://www.awin1.com/cread.php?awinmid=${latestMerchantId}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(cleanUrl)}`;
+        }
 
         return {
           id: deal.dealID,
@@ -54,11 +85,11 @@ async function fetchCheapSharkDeals() {
           thumb: deal.thumb,
           steamAppID: deal.steamAppID,
           storeID: deal.storeID,
-          link: affiliateLink
+          link: finalLink
         };
       });
 
-    console.log(`データ取得成功（Awinアフィリエイト化完了）: ${items.length} 件`);
+    console.log(`データ構築成功: ${items.length} 件 (適用Merchant ID: ${latestMerchantId || '抽出失敗/直リンク化'})`);
     return items;
   } catch (error) {
     console.error('CheapShark API取得エラー:', error.message || error);
@@ -248,7 +279,7 @@ Sitemap: ${DOMAIN}/sitemap.xml`;
   // JSON形式データ書き出し
   fs.writeFileSync(path.join(publicDir, 'deals.json'), JSON.stringify(items, null, 2));
 
-  console.log('ビルド完了: 収益化最適化版サイトの生成に成功しました。');
+  console.log('ビルド完了: HTTPヘッダ解析による完全自動追従版の生成に成功しました。');
 }
 
 main();
