@@ -4,8 +4,11 @@ import { execSync } from 'child_process';
 
 const DOMAIN = 'https://steam-deals-site.pages.dev'; 
 
-// 修正点1: storeID=15 (Fanatical) 単一指定でアフィリエイト成果を確実にする
-// 修正点2: lowerPrice=0.50 を追加し、API側で無料・超格安ゲームを最初から弾く
+// Awin Publisher ID & Fanatical Merchant ID
+const AWIN_PUBLISHER_ID = '3028347';
+const FANATICAL_MERCHANT_ID = '6201';
+
+// storeID=15 (Fanatical) 指定
 const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=15&lowerPrice=0.50&upperPrice=50&sortBy=Savings';
 
 async function fetchCheapSharkDeals() {
@@ -27,7 +30,6 @@ async function fetchCheapSharkDeals() {
       throw new Error('APIからの返却データが配列形式ではありませんでした。');
     }
 
-    // 修正点3: API側で下限価格を設定したため、ここでは単純に100%OFF表記のバグ除外と整形のみ行う
     const items = deals
       .filter(deal => Math.round(parseFloat(deal.savings || 0)) < 100)
       .slice(0, 50)
@@ -35,6 +37,12 @@ async function fetchCheapSharkDeals() {
         const savingsNum = Math.round(parseFloat(deal.savings || 0));
         const salePriceNum = parseFloat(deal.salePrice || 0);
         
+        // CheapSharkのリダイレクトURL
+        const rawRedirectUrl = `https://www.cheapshark.com/redirect?dealID=${deal.dealID}`;
+        
+        // Awinアフィリエイトトラッキングリンクへの変換
+        const affiliateLink = `https://www.awin1.com/cread.php?awinmid=${FANATICAL_MERCHANT_ID}&awinaffid=${AWIN_PUBLISHER_ID}&ued=${encodeURIComponent(rawRedirectUrl)}`;
+
         return {
           id: deal.dealID,
           title: deal.title,
@@ -46,11 +54,11 @@ async function fetchCheapSharkDeals() {
           thumb: deal.thumb,
           steamAppID: deal.steamAppID,
           storeID: deal.storeID,
-          link: `https://www.cheapshark.com/redirect?dealID=${deal.dealID}` // storeID=15ならFanaticalへ飛ぶ
+          link: affiliateLink
         };
       });
 
-    console.log(`データ取得成功（収益化対象）: ${items.length} 件`);
+    console.log(`データ取得成功（Awinアフィリエイト化完了）: ${items.length} 件`);
     return items;
   } catch (error) {
     console.error('CheapShark API取得エラー:', error.message || error);
