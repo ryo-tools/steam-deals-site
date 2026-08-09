@@ -1,5 +1,5 @@
-// 確実に通るシンプルなAPI URL
-const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=50';
+// 確実に通るシンプルなAPI URL（割引率順にソートを指定）
+const API_URL = 'https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=50&sortBy=Savings';
 
 async function fetchCheapSharkDeals() {
   console.log('CheapShark APIからSteamセールデータを取得中...');
