@@ -5,7 +5,7 @@ import { BskyAgent, RichText } from '@atproto/api';
 const HANDLE = process.env.BLUESKY_HANDLE;
 const PASSWORD = process.env.BLUESKY_PASSWORD;
 
-// 自身のCloudflare Pagesドメイン（または特化ページURL）に変更してください
+// 自身のCloudflare Pagesドメイン
 const SITE_URL = 'https://steam-deals-site.pages.dev';
 
 async function postToBluesky() {
@@ -77,8 +77,8 @@ async function postToBluesky() {
     // タイトルの長さを調整（文字数オーバー防止）
     const displayTitle = topItem.title.length > 40 ? topItem.title.substring(0, 37) + '...' : topItem.title;
 
-    // 本文テキスト構築（英語圏向け自サイト誘導）
-    const rawText = `${selectedHook}\n\n『${displayTitle}』\nPrice: ${topItem.salePrice} (${topItem.savings})\nNormal: ${topItem.normalPrice}\n\n👇Check Deals & Store Info:\n${SITE_URL}`;
+    // 本文テキスト構築（英語圏向けに二重鉤括弧から引用符へ修正）
+    const rawText = `${selectedHook}\n\n"${displayTitle}"\nPrice: ${topItem.salePrice} (${topItem.savings})\nNormal: ${topItem.normalPrice}\n\n👇Check Deals & Store Info:\n${SITE_URL}`;
     
     const rt = new RichText({ text: rawText });
     await rt.detectFacets(agent);
@@ -91,7 +91,7 @@ async function postToBluesky() {
         $type: 'app.bsky.embed.external',
         external: {
           uri: SITE_URL,
-          title: `【${topItem.savings}】${displayTitle}`,
+          title: `[${topItem.savings}] ${displayTitle}`,
           description: `Get ${topItem.title} on sale for ${topItem.salePrice} (Reg. ${topItem.normalPrice}) - Steam Deals & Price Tracker`,
           thumb: thumbBlob
         }
