@@ -78,6 +78,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=wK47szhf7fDfBG9yJmpw0tZKDYHWtHQSBfmAVMenoKc%3D"
   },
   {
+    "id": "pc6vr6htnhm43XUEgMzxhl2gbjFlJGJoLDJSk1iaVk8%3D",
+    "title": "Battlezone 98 Redux",
+    "salePrice": "$1.39",
+    "normalPrice": "$19.99",
+    "salePriceNum": 1.39,
+    "savingsNum": 93,
+    "savings": "93% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/301650/capsule_231x87.jpg?t=1579791137",
+    "steamAppID": "301650",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=pc6vr6htnhm43XUEgMzxhl2gbjFlJGJoLDJSk1iaVk8%3D"
+  },
+  {
     "id": "NpjfwX3L7gd14rIDyHdz8a8aemUdeyrcY3H8Ahrn%2Bpg%3D",
     "title": "Drug Dealer Simulator",
     "salePrice": "$1.39",
@@ -635,18 +648,5 @@
     "steamAppID": "658500",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=WStaZEKRXjrxq%2BhCfyBuGQOFRHXXTsbL8vpvxP2iXWw%3D"
-  },
-  {
-    "id": "RscCe6gAhqgWE1XjqBg0tL%2F0SRs%2FHDUeUloUgIrQ5%2B0%3D",
-    "title": "Bridge Constructor",
-    "salePrice": "$0.79",
-    "normalPrice": "$9.99",
-    "salePriceNum": 0.79,
-    "savingsNum": 92,
-    "savings": "92% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250460/capsule_231x87.jpg?t=1755107266",
-    "steamAppID": "250460",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=RscCe6gAhqgWE1XjqBg0tL%2F0SRs%2FHDUeUloUgIrQ5%2B0%3D"
   }
 ]
