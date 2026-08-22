@@ -611,6 +611,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=RwYb95yFD81bFENLYsgiesAHR3QN4GNcl1hGWCns9gw%3D"
   },
   {
+    "id": "wK5nPVnJJ0vrD2WQ%2FsBvHHPE%2FiOC3%2Bzna4CujAoO%2BQI%3D",
+    "title": "Saints Row",
+    "salePrice": "$4.49",
+    "normalPrice": "$29.99",
+    "salePriceNum": 4.49,
+    "savingsNum": 85,
+    "savings": "85% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/742420/capsule_231x87.jpg?t=1764670956",
+    "steamAppID": "742420",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=wK5nPVnJJ0vrD2WQ%2FsBvHHPE%2FiOC3%2Bzna4CujAoO%2BQI%3D"
+  },
+  {
     "id": "amPvBE3YrE0H8ldc%2F0FAxzOYOcgQ4Em8O6xTyDhCU28%3D",
     "title": "Metro Exodus",
     "salePrice": "$4.49",
@@ -635,18 +648,5 @@
     "steamAppID": null,
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=VEcUvGkodMjjf05cfkG4aERLzmMRx6CJGcQ2BOEaMr4%3D"
-  },
-  {
-    "id": "rJWN1QRk76H8XFqctyCxHB0dMB62otw5uf8t8AYnD5M%3D",
-    "title": "Metro Exodus - Gold Edition",
-    "salePrice": "$5.99",
-    "normalPrice": "$39.99",
-    "salePriceNum": 5.99,
-    "savingsNum": 85,
-    "savings": "85% OFF",
-    "thumb": "https://images.gog-statics.com/0550913e8ab28c1d22a00498f3acc46b137a1ddf797b89d176357102679157e3_product_tile_117h.webp",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=rJWN1QRk76H8XFqctyCxHB0dMB62otw5uf8t8AYnD5M%3D"
   }
 ]
