@@ -130,6 +130,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=ysWswSJI1nYNMuFjmggtDAwCmXTuU8DQvc3%2FLzcZL1g%3D"
   },
   {
+    "id": "RLvbhHaMktvde0Lw5FAG8Ir4XFCi1ypH5yW8NSlN1%2FU%3D",
+    "title": "Sid Meiers Civilization VI",
+    "salePrice": "$5.09",
+    "normalPrice": "$59.99",
+    "salePriceNum": 5.09,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/289070/capsule_231x87.jpg?t=1784651829",
+    "steamAppID": "289070",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=RLvbhHaMktvde0Lw5FAG8Ir4XFCi1ypH5yW8NSlN1%2FU%3D"
+  },
+  {
     "id": "Ba71b6aXmZ76FHkeChwhhJgJzSGwrHrcEfnoGdbibv0%3D",
     "title": "Livelock",
     "salePrice": "$0.89",
@@ -635,18 +648,5 @@
     "steamAppID": "1556490",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=OwlTYTty7xw45nMT3pn2zCIJOLAiNiN3enwJ2X6CUGo%3D"
-  },
-  {
-    "id": "5nuHSDy%2FukGgdkImrTTW9SB3rPMoHfAM8i1vhWuWsc0%3D",
-    "title": "Seed Hunter",
-    "salePrice": "$1.34",
-    "normalPrice": "$8.99",
-    "salePriceNum": 1.34,
-    "savingsNum": 85,
-    "savings": "85% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1078490/capsule_231x87.jpg?t=1763376128",
-    "steamAppID": "1078490",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=5nuHSDy%2FukGgdkImrTTW9SB3rPMoHfAM8i1vhWuWsc0%3D"
   }
 ]
