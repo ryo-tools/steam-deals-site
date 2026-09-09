@@ -13,6 +13,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=Kdhb7bEGkEKf6Svg26n27MZD1Xa9XkAvWjTfAdqXnK0%3D"
   },
   {
+    "id": "uu3Jyptw5OyTE0C69x%2Bl2S0UfbfvrlIacP%2BRrgysuwQ%3D",
+    "title": "Zombie Army Trilogy",
+    "salePrice": "$2.24",
+    "normalPrice": "$44.99",
+    "salePriceNum": 2.24,
+    "savingsNum": 95,
+    "savings": "95% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/301640/capsule_231x87.jpg?t=1734453776",
+    "steamAppID": "301640",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=uu3Jyptw5OyTE0C69x%2Bl2S0UfbfvrlIacP%2BRrgysuwQ%3D"
+  },
+  {
     "id": "N7FiYm7XAfXpPTTX2DhmKBJhBAaIoJho03KRcd86vAI%3D",
     "title": "Dogfight 1942",
     "salePrice": "$0.79",
@@ -50,19 +63,6 @@
     "steamAppID": null,
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=0qxGc4Bs6E4BTmUjW4uixAviHP5Vm2K%2F32RIcv7Wlkw%3D"
-  },
-  {
-    "id": "BMHdFgDSnVt6VzfzTcWA5UFStZkasKXKykk1xqWCFDA%3D",
-    "title": "Jetboard Joust",
-    "salePrice": "$0.79",
-    "normalPrice": "$9.99",
-    "salePriceNum": 0.79,
-    "savingsNum": 92,
-    "savings": "92% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1181600/capsule_231x87.jpg?t=1768951819",
-    "steamAppID": "1181600",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=BMHdFgDSnVt6VzfzTcWA5UFStZkasKXKykk1xqWCFDA%3D"
   },
   {
     "id": "t%2F975Agb1plU43QNb3ZoAz8G3CmDf3%2B3beDus5PbOrk%3D",
@@ -167,19 +167,6 @@
     "steamAppID": "416790",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=%2BLkD2LOpNrt1ORuAEOr%2FH8bTZy1YR%2BU%2F2EVEzvzXtyk%3D"
-  },
-  {
-    "id": "FEGShqXCFJ%2BY6UzY%2BGei%2FBimWlPfwyD%2BmKgs5mK%2F1Uw%3D",
-    "title": "Neon Blight",
-    "salePrice": "$1.59",
-    "normalPrice": "$19.99",
-    "salePriceNum": 1.59,
-    "savingsNum": 92,
-    "savings": "92% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1360660/capsule_231x87.jpg?t=1774489238",
-    "steamAppID": "1360660",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=FEGShqXCFJ%2BY6UzY%2BGei%2FBimWlPfwyD%2BmKgs5mK%2F1Uw%3D"
   },
   {
     "id": "aoFcioT6K70cKSTlJMowTN8w4GrD%2BwYx2Noe1vX3NaM%3D",
@@ -648,5 +635,18 @@
     "steamAppID": "359840",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=UygTVNQCk1aWNKrjvh9iiWFKILo0xKnjG2AlSUe0LN0%3D"
+  },
+  {
+    "id": "XYR%2B8TI%2FAq6b8BrAGZsGW9%2FUXoZGgMOfqrXhDT93xRk%3D",
+    "title": "VELONE",
+    "salePrice": "$1.69",
+    "normalPrice": "$16.99",
+    "salePriceNum": 1.69,
+    "savingsNum": 90,
+    "savings": "90% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1811750/capsule_231x87.jpg?t=1716976754",
+    "steamAppID": "1811750",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=XYR%2B8TI%2FAq6b8BrAGZsGW9%2FUXoZGgMOfqrXhDT93xRk%3D"
   }
 ]
