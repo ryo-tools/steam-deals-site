@@ -2,11 +2,11 @@
   {
     "id": "IS4Q36wHpskHedM65xS4wtQrFph%2Bvim3R7waXua6Nrs%3D",
     "title": "Miner's Mettle",
-    "salePrice": "$1.24",
+    "salePrice": "$1.12",
     "normalPrice": "$24.99",
-    "salePriceNum": 1.24,
-    "savingsNum": 95,
-    "savings": "95% OFF",
+    "salePriceNum": 1.12,
+    "savingsNum": 96,
+    "savings": "96% OFF",
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1058800/capsule_231x87.jpg?t=1721234837",
     "steamAppID": "1058800",
     "storeID": "15",
@@ -24,19 +24,6 @@
     "steamAppID": "921800",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=Kdhb7bEGkEKf6Svg26n27MZD1Xa9XkAvWjTfAdqXnK0%3D"
-  },
-  {
-    "id": "7VV9VQMDb7vb7njnC1eq2IASxhvQ2xFl0AC%2FV%2F3d7bo%3D",
-    "title": "VASARA Collection",
-    "salePrice": "$0.79",
-    "normalPrice": "$9.99",
-    "salePriceNum": 0.79,
-    "savingsNum": 92,
-    "savings": "92% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085630/233b603a5da176eac0f3c311231153ba86e7d909/capsule_231x87.jpg?t=1778291131",
-    "steamAppID": "1085630",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=7VV9VQMDb7vb7njnC1eq2IASxhvQ2xFl0AC%2FV%2F3d7bo%3D"
   },
   {
     "id": "Q4i9CrPSbDH574UjnQ4%2FwOSjq9z3ZuPwMOJlhpKMemw%3D",
@@ -89,6 +76,19 @@
     "steamAppID": null,
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=aoFcioT6K70cKSTlJMowTN8w4GrD%2BwYx2Noe1vX3NaM%3D"
+  },
+  {
+    "id": "3%2BAAIOPN2FaB%2Fj9ejkC8fRSyaopdDAPRHzsgGwWXWZ4%3D",
+    "title": "Dont Stop, Girlypop!",
+    "salePrice": "$1.59",
+    "normalPrice": "$19.99",
+    "salePriceNum": 1.59,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2610650/57a9f10795c7e7c439c8bc57c3bddcdfa91d9bbc/capsule_231x87.jpg?t=1789141970",
+    "steamAppID": "2610650",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=3%2BAAIOPN2FaB%2Fj9ejkC8fRSyaopdDAPRHzsgGwWXWZ4%3D"
   },
   {
     "id": "p%2B9mcg0dMqYPMYeRrRDaKRq4gQA6UIjncJh0US3Lu%2Bs%3D",
@@ -284,19 +284,6 @@
     "steamAppID": "286690",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=7xy5A9tNsHVw8JjckcBDRr7PL6MXHN4jBwRXQ9GX6Ps%3D"
-  },
-  {
-    "id": "V3OXucKGk0AC8jfcRY2lm3Wmt%2F%2B9chfCer3aKHMdZJU%3D",
-    "title": "Killer is Dead - Nightmare Edition",
-    "salePrice": "$1.99",
-    "normalPrice": "$19.99",
-    "salePriceNum": 1.99,
-    "savingsNum": 90,
-    "savings": "90% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/261110/capsule_231x87.jpg?t=1730389855",
-    "steamAppID": "261110",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=V3OXucKGk0AC8jfcRY2lm3Wmt%2F%2B9chfCer3aKHMdZJU%3D"
   },
   {
     "id": "bWZdIrrZ10tsQQTjbwg0u6aJ8ioelPnBppoWzRQ8nEM%3D",
@@ -518,6 +505,19 @@
     "steamAppID": null,
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=F5TyKqCxXHuiZi4Bjgzeo76%2F6su2eUl%2B%2F6kSvIHjG38%3D"
+  },
+  {
+    "id": "7VV9VQMDb7vb7njnC1eq2IASxhvQ2xFl0AC%2FV%2F3d7bo%3D",
+    "title": "VASARA Collection",
+    "salePrice": "$1.14",
+    "normalPrice": "$9.99",
+    "salePriceNum": 1.14,
+    "savingsNum": 89,
+    "savings": "89% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085630/233b603a5da176eac0f3c311231153ba86e7d909/capsule_231x87.jpg?t=1778291131",
+    "steamAppID": "1085630",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=7VV9VQMDb7vb7njnC1eq2IASxhvQ2xFl0AC%2FV%2F3d7bo%3D"
   },
   {
     "id": "HPz%2F65D0tIqDYAZkj6bWEm2KztvhJ%2FPbsnxOXNemCzw%3D",
