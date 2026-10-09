@@ -52,19 +52,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=wVTwDQ%2BQBTHeB1%2BY7EPru1YTtisxs7mZOHbY6W03Hls%3D"
   },
   {
-    "id": "gvYkpm7FqORE56tniht9eMSjaaPLTxfgqmJmUyDfDPk%3D",
-    "title": "Evil Genius 2: World Domination Deluxe Edition",
-    "salePrice": "$2.39",
-    "normalPrice": "$59.99",
-    "salePriceNum": 2.39,
-    "savingsNum": 96,
-    "savings": "96% OFF",
-    "thumb": "https://sttc.gamersgate.com/images/product/evil-genius-2-world-domination-deluxe-edition/cover-180-29f112.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=gvYkpm7FqORE56tniht9eMSjaaPLTxfgqmJmUyDfDPk%3D"
-  },
-  {
     "id": "BnaBv1LOFpbNV238kBvrcb4ajov3UJAsFl5S97vT2X8%3D",
     "title": "RiMS Racing : Japanese Manufacturers Deluxe Edition",
     "salePrice": "$2.38",
@@ -154,32 +141,6 @@
     "steamAppID": "1058800",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=IS4Q36wHpskHedM65xS4wtQrFph%2Bvim3R7waXua6Nrs%3D"
-  },
-  {
-    "id": "Z2ZoFheREYc2syRgg%2FB4w90EzpnMbADmsLoAhCWvhr4%3D",
-    "title": "Suicide Squad: Kill the Justice League",
-    "salePrice": "$3.14",
-    "normalPrice": "$69.99",
-    "salePriceNum": 3.14,
-    "savingsNum": 96,
-    "savings": "96% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/315210/capsule_231x87.jpg?t=1777940046",
-    "steamAppID": "315210",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=Z2ZoFheREYc2syRgg%2FB4w90EzpnMbADmsLoAhCWvhr4%3D"
-  },
-  {
-    "id": "%2BRZp97Om%2B4gy2KG1x05UpBl1ihJAKS768gQ19GuyVFI%3D",
-    "title": "Suicide Squad: Kill the Justice League - Deluxe Edition",
-    "salePrice": "$4.49",
-    "normalPrice": "$99.99",
-    "salePriceNum": 4.49,
-    "savingsNum": 96,
-    "savings": "96% OFF",
-    "thumb": "https://images.greenmangaming.com/98fb0e76d36341cea0f0ca36ce9c08c6/f08e60d2766549d6b1e89e25444a00e8.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=%2BRZp97Om%2B4gy2KG1x05UpBl1ihJAKS768gQ19GuyVFI%3D"
   },
   {
     "id": "Kdhb7bEGkEKf6Svg26n27MZD1Xa9XkAvWjTfAdqXnK0%3D",
@@ -624,19 +585,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=qFyCPxgzFtDNxH2Jhob7zuYJvFvc04jVs3itDRQ3rqU%3D"
   },
   {
-    "id": "uu3Jyptw5OyTE0C69x%2Bl2S0UfbfvrlIacP%2BRrgysuwQ%3D",
-    "title": "Zombie Army Trilogy",
-    "salePrice": "$3.37",
-    "normalPrice": "$44.99",
-    "salePriceNum": 3.37,
-    "savingsNum": 93,
-    "savings": "93% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/301640/capsule_231x87.jpg?t=1734453776",
-    "steamAppID": "301640",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=uu3Jyptw5OyTE0C69x%2Bl2S0UfbfvrlIacP%2BRrgysuwQ%3D"
-  },
-  {
     "id": "xRt8ZFdi3p1TVuUuHpQJIctvZ4pr1bhygpW9oYnsQME%3D",
     "title": "Rogue Trooper Redux Collectors Edition",
     "salePrice": "$2.23",
@@ -648,5 +596,57 @@
     "steamAppID": null,
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=xRt8ZFdi3p1TVuUuHpQJIctvZ4pr1bhygpW9oYnsQME%3D"
+  },
+  {
+    "id": "l1M7%2FvGjY2rmf2C1ageOYeVBO%2FbgTomhrX3Bwfmc8PU%3D",
+    "title": "Super Treasure Arena",
+    "salePrice": "$0.63",
+    "normalPrice": "$7.99",
+    "salePriceNum": 0.63,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/338330/capsule_231x87.jpg?t=1717662452",
+    "steamAppID": "338330",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=l1M7%2FvGjY2rmf2C1ageOYeVBO%2FbgTomhrX3Bwfmc8PU%3D"
+  },
+  {
+    "id": "glcM0ze56MDeXHgUCVT%2Fhim6%2BZ70aI7OxFu7Zke4j%2FY%3D",
+    "title": "KryptCrawler",
+    "salePrice": "$0.63",
+    "normalPrice": "$7.99",
+    "salePriceNum": 0.63,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/691590/capsule_231x87.jpg?t=1717597011",
+    "steamAppID": "691590",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=glcM0ze56MDeXHgUCVT%2Fhim6%2BZ70aI7OxFu7Zke4j%2FY%3D"
+  },
+  {
+    "id": "F%2BRRN51d4mxrjD%2FCcifVqwEsp62fWC0EpM%2B6Rrpm4lI%3D",
+    "title": "Explodemon!",
+    "salePrice": "$0.71",
+    "normalPrice": "$8.99",
+    "salePriceNum": 0.71,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/281820/capsule_231x87.jpg?t=1747739691",
+    "steamAppID": "281820",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=F%2BRRN51d4mxrjD%2FCcifVqwEsp62fWC0EpM%2B6Rrpm4lI%3D"
+  },
+  {
+    "id": "kMTv3ESbYBlpYt4MLw5OtbK05qbqkzcT5uqs7UGiIh8%3D",
+    "title": "Viking Rage",
+    "salePrice": "$0.71",
+    "normalPrice": "$8.99",
+    "salePriceNum": 0.71,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/589150/capsule_231x87.jpg?t=1717594989",
+    "steamAppID": "589150",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=kMTv3ESbYBlpYt4MLw5OtbK05qbqkzcT5uqs7UGiIh8%3D"
   }
 ]
