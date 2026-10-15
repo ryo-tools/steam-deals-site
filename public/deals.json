@@ -39,19 +39,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=n344uClDxDUaqHVAPWj479H%2Fundz5Oa534zfDwRN%2Fg0%3D"
   },
   {
-    "id": "wVTwDQ%2BQBTHeB1%2BY7EPru1YTtisxs7mZOHbY6W03Hls%3D",
-    "title": "Warhammer: Chaosbane - Slayer Edition",
-    "salePrice": "$1.59",
-    "normalPrice": "$39.99",
-    "salePriceNum": 1.59,
-    "savingsNum": 96,
-    "savings": "96% OFF",
-    "thumb": "https://sttc.gamersgate.com/images/product/warhammer-chaosbane-slayer-edition/cover-180-31bb27.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=wVTwDQ%2BQBTHeB1%2BY7EPru1YTtisxs7mZOHbY6W03Hls%3D"
-  },
-  {
     "id": "BnaBv1LOFpbNV238kBvrcb4ajov3UJAsFl5S97vT2X8%3D",
     "title": "RiMS Racing : Japanese Manufacturers Deluxe Edition",
     "salePrice": "$2.38",
@@ -648,5 +635,18 @@
     "steamAppID": "281820",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=F%2BRRN51d4mxrjD%2FCcifVqwEsp62fWC0EpM%2B6Rrpm4lI%3D"
+  },
+  {
+    "id": "kMTv3ESbYBlpYt4MLw5OtbK05qbqkzcT5uqs7UGiIh8%3D",
+    "title": "Viking Rage",
+    "salePrice": "$0.71",
+    "normalPrice": "$8.99",
+    "salePriceNum": 0.71,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/589150/capsule_231x87.jpg?t=1717594989",
+    "steamAppID": "589150",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=kMTv3ESbYBlpYt4MLw5OtbK05qbqkzcT5uqs7UGiIh8%3D"
   }
 ]
