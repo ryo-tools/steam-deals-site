@@ -91,6 +91,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=aoFcioT6K70cKSTlJMowTN8w4GrD%2BwYx2Noe1vX3NaM%3D"
   },
   {
+    "id": "ezeIuUun1p2YAP%2FJe4HSEy8r4B1kUdFNmX%2FVT8C1jVw%3D",
+    "title": "Cake Bash",
+    "salePrice": "$1.59",
+    "normalPrice": "$19.99",
+    "salePriceNum": 1.59,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/971690/5898ff824f0f7decbba97431920dc2680199ef20/capsule_231x87.jpg?t=1752681546",
+    "steamAppID": "971690",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=ezeIuUun1p2YAP%2FJe4HSEy8r4B1kUdFNmX%2FVT8C1jVw%3D"
+  },
+  {
     "id": "hnSCdu%2BAlLWvXMAyC17x6gkCwAawTm3ZTtHio8synOU%3D",
     "title": "The Wild Eight",
     "salePrice": "$1.99",
@@ -228,7 +241,7 @@
     "salePriceNum": 5.09,
     "savingsNum": 92,
     "savings": "92% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/289070/capsule_231x87.jpg?t=1784651829",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/289070/capsule_231x87.jpg?t=1792602288",
     "steamAppID": "289070",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=RLvbhHaMktvde0Lw5FAG8Ir4XFCi1ypH5yW8NSlN1%2FU%3D"
@@ -260,43 +273,17 @@
     "link": "https://www.cheapshark.com/redirect?dealID=fmddwl8BS76iUN29lenVQwYiU3XHcZlSXf67qgRu0%2FI%3D"
   },
   {
-    "id": "%2FGer7XPcpsyvTn%2BykJOuM2KL2WrGhNZlhohQhIqI4do%3D",
-    "title": "Funko Fusion - Invincible Pack",
+    "id": "z%2B4KUaaVX5mNL71DPDsg8RSJUdn5fFC0C5oUIN7XaRc%3D",
+    "title": "Fahrenheit: Indigo Prophecy Remastered",
     "salePrice": "$0.89",
     "normalPrice": "$9.99",
     "salePriceNum": 0.89,
     "savingsNum": 91,
     "savings": "91% OFF",
-    "thumb": "https://images.greenmangaming.com/ea4c17f31c5d4401b26960254c779069/0e86a8f9e25f492aa1dd44b95aad21d5.jpg",
-    "steamAppID": null,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312840/capsule_231x87.jpg?t=1715614331",
+    "steamAppID": "312840",
     "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=%2FGer7XPcpsyvTn%2BykJOuM2KL2WrGhNZlhohQhIqI4do%3D"
-  },
-  {
-    "id": "JLvdutjaXoTp2eq1MqxkXrc5GdaknP7uKLMiPVMPf0Y%3D",
-    "title": "Funko Fusion - Mega Man Pack",
-    "salePrice": "$0.89",
-    "normalPrice": "$9.99",
-    "salePriceNum": 0.89,
-    "savingsNum": 91,
-    "savings": "91% OFF",
-    "thumb": "https://images.greenmangaming.com/02e018322afc46ed9d5808b21bcdebd4/17b3b2c527e2406aa6d1b8eb5f40724b.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=JLvdutjaXoTp2eq1MqxkXrc5GdaknP7uKLMiPVMPf0Y%3D"
-  },
-  {
-    "id": "QL6lbtfZPl2De6wcYDsE5XYoaoY%2F9s4a3Ihfg2AvCN4%3D",
-    "title": "Funko Fusion - Universal Monsters Pack",
-    "salePrice": "$0.89",
-    "normalPrice": "$9.99",
-    "salePriceNum": 0.89,
-    "savingsNum": 91,
-    "savings": "91% OFF",
-    "thumb": "https://images.greenmangaming.com/acd93f3f0f164577b4103e588fb1538c/7d680ff993ef4a45a500abee44099b8a.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=QL6lbtfZPl2De6wcYDsE5XYoaoY%2F9s4a3Ihfg2AvCN4%3D"
+    "link": "https://www.cheapshark.com/redirect?dealID=z%2B4KUaaVX5mNL71DPDsg8RSJUdn5fFC0C5oUIN7XaRc%3D"
   },
   {
     "id": "lkDaMPbjpd8MG%2BlHELGEkdMYUQfwcnDXYTg7f%2F3Y%2Bs8%3D",
@@ -312,17 +299,30 @@
     "link": "https://www.cheapshark.com/redirect?dealID=lkDaMPbjpd8MG%2BlHELGEkdMYUQfwcnDXYTg7f%2F3Y%2Bs8%3D"
   },
   {
-    "id": "V6ClIvx9So%2FgdwCuwSnI7gxw3kDrj3qVJstca4WlbJ0%3D",
-    "title": "Funko Fusion",
-    "salePrice": "$3.14",
-    "normalPrice": "$34.99",
-    "salePriceNum": 3.14,
+    "id": "0V9a0Z2q4RA6VcWEeH8yyygG574Pr2qsLBBJHEhNGPQ%3D",
+    "title": "Lysfanga: The Time Shift Warrior",
+    "salePrice": "$1.79",
+    "normalPrice": "$19.99",
+    "salePriceNum": 1.79,
     "savingsNum": 91,
     "savings": "91% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1843310/7810dce7da493ed2d11f474e39d9cfe6cf26a85b/capsule_231x87.jpg?t=1775833909",
-    "steamAppID": "1843310",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2161620/capsule_231x87.jpg?t=1710436253",
+    "steamAppID": "2161620",
     "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=V6ClIvx9So%2FgdwCuwSnI7gxw3kDrj3qVJstca4WlbJ0%3D"
+    "link": "https://www.cheapshark.com/redirect?dealID=0V9a0Z2q4RA6VcWEeH8yyygG574Pr2qsLBBJHEhNGPQ%3D"
+  },
+  {
+    "id": "VQmOayfn2azLjLVwhnVrwv0wipCZxzSgzHfurzLAa6s%3D",
+    "title": "Dustborn",
+    "salePrice": "$2.69",
+    "normalPrice": "$29.99",
+    "salePriceNum": 2.69,
+    "savingsNum": 91,
+    "savings": "91% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/721180/capsule_231x87.jpg?t=1792513427",
+    "steamAppID": "721180",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=VQmOayfn2azLjLVwhnVrwv0wipCZxzSgzHfurzLAa6s%3D"
   },
   {
     "id": "fiVBYNCLARYZF7v60kD%2BWHTgaQgUJnMwRHMzs9YCXGM%3D",
@@ -377,6 +377,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=G7sPTjC6eoPyE%2BL8GLrxFY4WxieDUfAllI6P%2BIVSREA%3D"
   },
   {
+    "id": "n%2F3pjUwkLFRZPWVVqj%2Bct2986bSnYpaOEMkj43D5QYM%3D",
+    "title": "Stories Untold",
+    "salePrice": "$0.99",
+    "normalPrice": "$9.99",
+    "salePriceNum": 0.99,
+    "savingsNum": 90,
+    "savings": "90% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/558420/capsule_231x87.jpg?t=1788374614",
+    "steamAppID": "558420",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=n%2F3pjUwkLFRZPWVVqj%2Bct2986bSnYpaOEMkj43D5QYM%3D"
+  },
+  {
     "id": "vUhl%2BOE61m84vLEThUPwaVC046Wo82rtPtnXy8sCZ1k%3D",
     "title": "Super Neptunia RPG - Deluxe Pack",
     "salePrice": "$1.09",
@@ -388,6 +401,45 @@
     "steamAppID": null,
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=vUhl%2BOE61m84vLEThUPwaVC046Wo82rtPtnXy8sCZ1k%3D"
+  },
+  {
+    "id": "38%2FW1FZNCLueRDfAWb35O1ROWk3r1ueQSQzsunwtRzw%3D",
+    "title": "Joe Danger",
+    "salePrice": "$1.49",
+    "normalPrice": "$14.99",
+    "salePriceNum": 1.49,
+    "savingsNum": 90,
+    "savings": "90% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/229890/capsule_231x87.jpg?t=1709306835",
+    "steamAppID": "229890",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=38%2FW1FZNCLueRDfAWb35O1ROWk3r1ueQSQzsunwtRzw%3D"
+  },
+  {
+    "id": "xDT3oIz4UhoIwdwlE0h6j2GYtmGpx1eYA5fypd13mGY%3D",
+    "title": "Joe Danger 2: The Movie",
+    "salePrice": "$1.49",
+    "normalPrice": "$14.99",
+    "salePriceNum": 1.49,
+    "savingsNum": 90,
+    "savings": "90% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/242110/capsule_231x87.jpg?t=1727078711",
+    "steamAppID": "242110",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=xDT3oIz4UhoIwdwlE0h6j2GYtmGpx1eYA5fypd13mGY%3D"
+  },
+  {
+    "id": "4qGzRUsKtRMk2o2GJUjb9bOsc%2BJtiVZ8qWHQLTkZQ2w%3D",
+    "title": "The Last Campfire",
+    "salePrice": "$1.49",
+    "normalPrice": "$14.99",
+    "salePriceNum": 1.49,
+    "savingsNum": 90,
+    "savings": "90% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990630/capsule_231x87.jpg?t=1725272727",
+    "steamAppID": "990630",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=4qGzRUsKtRMk2o2GJUjb9bOsc%2BJtiVZ8qWHQLTkZQ2w%3D"
   },
   {
     "id": "zngElAOd1seMtWnOyb1mJmYH4oesD59obNIXVHQ7xyc%3D",
@@ -423,7 +475,7 @@
     "salePriceNum": 1.99,
     "savingsNum": 90,
     "savings": "90% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/287390/capsule_231x87.jpg?t=1725444535",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/287390/e05aeffd3c09e19aec8128bf850dc2f39cc36e1d/capsule_231x87_alt_assets_1.jpg?t=1792681177",
     "steamAppID": "287390",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=iykbQA9QILR7pRES2j0%2BNkATsLlHtqRugk7i1TA7Oq0%3D"
@@ -436,7 +488,7 @@
     "salePriceNum": 1.99,
     "savingsNum": 90,
     "savings": "90% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/286690/capsule_231x87.jpg?t=1741110084",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/286690/e61b54b5c5ec0a610be1bd53e89b461c413e0e6b/capsule_231x87_alt_assets_1.jpg?t=1792681167",
     "steamAppID": "286690",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=7xy5A9tNsHVw8JjckcBDRr7PL6MXHN4jBwRXQ9GX6Ps%3D"
@@ -494,6 +546,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=68mi2Wf9q7J3ELRTu%2BO%2Bgcbu6hZj9vcXz9Y81OJ4%2Bds%3D"
   },
   {
+    "id": "0Mng0IxDUnCRI9IuSgzaN0FYoFkwZfoQWDuIUVQ6leQ%3D",
+    "title": "Joe Danger and Joe Danger 2: The Movie Bundle",
+    "salePrice": "$2.49",
+    "normalPrice": "$24.99",
+    "salePriceNum": 2.49,
+    "savingsNum": 90,
+    "savings": "90% OFF",
+    "thumb": "https://sttc.gamersgate.com/images/product/joe-danger-joe-danger-2-the-movie-bundle/cover-180-f081cb.jpg",
+    "steamAppID": null,
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=0Mng0IxDUnCRI9IuSgzaN0FYoFkwZfoQWDuIUVQ6leQ%3D"
+  },
+  {
     "id": "6SueS%2FtclOw0zAuqLlX1jgqsWxtjuAnJ4RTFdIMkKVI%3D",
     "title": "Siege Survival: Gloria Victis",
     "salePrice": "$2.49",
@@ -546,107 +611,42 @@
     "link": "https://www.cheapshark.com/redirect?dealID=7RaUWtOid%2F2TpnnkEbejRrKp6XgYlTt23uGMA7bkUYI%3D"
   },
   {
-    "id": "WruSwRar7%2F5BoX5K6G0yXbTA1WvM%2BW5LBaxQcDmrBBI%3D",
-    "title": "Floodland",
+    "id": "thM5WBgIJ1RKayDcMjHzKVtufbEegjtwIKTRFrre5vQ%3D",
+    "title": "Shadow Warrior 2",
     "salePrice": "$2.99",
     "normalPrice": "$29.99",
     "salePriceNum": 2.99,
     "savingsNum": 90,
     "savings": "90% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1336180/capsule_231x87.jpg?t=1726480916",
-    "steamAppID": "1336180",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/324800/capsule_231x87.jpg?t=1728689727",
+    "steamAppID": "324800",
     "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=WruSwRar7%2F5BoX5K6G0yXbTA1WvM%2BW5LBaxQcDmrBBI%3D"
+    "link": "https://www.cheapshark.com/redirect?dealID=thM5WBgIJ1RKayDcMjHzKVtufbEegjtwIKTRFrre5vQ%3D"
   },
   {
-    "id": "r%2FqH2%2BauwmR0sInoc9j%2FPlqo3q8Xk4A6jPBCvDfNM9c%3D",
-    "title": "Scars Above",
+    "id": "trzUqLOxajw1m21J7dIFg%2Bz5b%2B5CPgoacvQ36Is49IU%3D",
+    "title": "Shadow Warrior",
     "salePrice": "$2.99",
     "normalPrice": "$29.99",
     "salePriceNum": 2.99,
     "savingsNum": 90,
     "savings": "90% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1196090/capsule_231x87.jpg?t=1681942670",
-    "steamAppID": "1196090",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/233130/capsule_231x87.jpg?t=1710246206",
+    "steamAppID": "233130",
     "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=r%2FqH2%2BauwmR0sInoc9j%2FPlqo3q8Xk4A6jPBCvDfNM9c%3D"
+    "link": "https://www.cheapshark.com/redirect?dealID=trzUqLOxajw1m21J7dIFg%2Bz5b%2B5CPgoacvQ36Is49IU%3D"
   },
   {
-    "id": "cSURncwiDuqUgbMtCJZwNOM5yhENP%2FKJdx7eX6G4emk%3D",
-    "title": "Metro Redux Bundle",
+    "id": "02lP0PBd7DEZcbnOl2q4LXORyMjWCxZRjhtBy2UX1tE%3D",
+    "title": "Serious Sam 3: BFE",
     "salePrice": "$2.99",
-    "normalPrice": "$29.98",
+    "normalPrice": "$29.99",
     "salePriceNum": 2.99,
     "savingsNum": 90,
     "savings": "90% OFF",
-    "thumb": "https://cdn.humblebundle.com/misc/files/hashed/d513cd0fbed71dc581471346cba66033dea0b7fd.png",
-    "steamAppID": null,
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/41070/capsule_231x87.jpg?t=1728688460",
+    "steamAppID": "41070",
     "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=cSURncwiDuqUgbMtCJZwNOM5yhENP%2FKJdx7eX6G4emk%3D"
-  },
-  {
-    "id": "nEwmPKsOIj4g19jilP15c%2B%2B4kwl8HRwAx1sxyRQkJuo%3D",
-    "title": "The Last Oricru",
-    "salePrice": "$3.99",
-    "normalPrice": "$39.99",
-    "salePriceNum": 3.99,
-    "savingsNum": 90,
-    "savings": "90% OFF",
-    "thumb": "https://cdn.humblebundle.com/misc/files/hashed/7779a441a66e6f5b70ab7df2b02e027eb2096f47.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=nEwmPKsOIj4g19jilP15c%2B%2B4kwl8HRwAx1sxyRQkJuo%3D"
-  },
-  {
-    "id": "CzyoVjCVH4z5R7Mx%2F4YX6vNJG1PgA%2Br4AsE3Sq553OM%3D",
-    "title": "Saints Row The Third Remastered",
-    "salePrice": "$3.99",
-    "normalPrice": "$39.99",
-    "salePriceNum": 3.99,
-    "savingsNum": 90,
-    "savings": "90% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/978300/capsule_231x87.jpg?t=1764671001",
-    "steamAppID": "978300",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=CzyoVjCVH4z5R7Mx%2F4YX6vNJG1PgA%2Br4AsE3Sq553OM%3D"
-  },
-  {
-    "id": "UOQHLXbk86ZUW35EFo3QJ778Gr1d%2BEKEAXvH0bfBAtU%3D",
-    "title": "Gungrave G.O.R.E",
-    "salePrice": "$4.99",
-    "normalPrice": "$49.99",
-    "salePriceNum": 4.99,
-    "savingsNum": 90,
-    "savings": "90% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1630110/capsule_231x87.jpg?t=1728053351",
-    "steamAppID": "1630110",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=UOQHLXbk86ZUW35EFo3QJ778Gr1d%2BEKEAXvH0bfBAtU%3D"
-  },
-  {
-    "id": "aPgg20gUAkUBDmvBiinGzSLC6wMR86BC55GLvxDqU3E%3D",
-    "title": "Kings Bounty II Lords Edition",
-    "salePrice": "$5.49",
-    "normalPrice": "$54.99",
-    "salePriceNum": 5.49,
-    "savingsNum": 90,
-    "savings": "90% OFF",
-    "thumb": "https://sttc.gamersgate.com/images/product/kings-bounty-ii-lords-edition-new/cover-180-21713e.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=aPgg20gUAkUBDmvBiinGzSLC6wMR86BC55GLvxDqU3E%3D"
-  },
-  {
-    "id": "02fq2Eaon%2BjEGED9Hr142YQmFtSfmGBWFRN340Zzj90%3D",
-    "title": "Kings Bounty II - Dukes Edition",
-    "salePrice": "$5.99",
-    "normalPrice": "$59.99",
-    "salePriceNum": 5.99,
-    "savingsNum": 90,
-    "savings": "90% OFF",
-    "thumb": "https://images.gog-statics.com/84eeda9d0cc19478e8449df35406af20337d847bcc343fc2605af0cc86144128_product_tile_117h.webp",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=02fq2Eaon%2BjEGED9Hr142YQmFtSfmGBWFRN340Zzj90%3D"
+    "link": "https://www.cheapshark.com/redirect?dealID=02lP0PBd7DEZcbnOl2q4LXORyMjWCxZRjhtBy2UX1tE%3D"
   }
 ]
