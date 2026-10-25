@@ -221,6 +221,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=fiVBYNCLARYZF7v60kD%2BWHTgaQgUJnMwRHMzs9YCXGM%3D"
   },
   {
+    "id": "rJWN1QRk76H8XFqctyCxHB0dMB62otw5uf8t8AYnD5M%3D",
+    "title": "Metro Exodus - Gold Edition",
+    "salePrice": "$3.59",
+    "normalPrice": "$39.99",
+    "salePriceNum": 3.59,
+    "savingsNum": 91,
+    "savings": "91% OFF",
+    "thumb": "https://images.gog-statics.com/0550913e8ab28c1d22a00498f3acc46b137a1ddf797b89d176357102679157e3_product_tile_117h.webp",
+    "steamAppID": null,
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=rJWN1QRk76H8XFqctyCxHB0dMB62otw5uf8t8AYnD5M%3D"
+  },
+  {
     "id": "Rx%2BFAM2mLblZfq6LMMLvY%2Fie%2FKv2I9R1nc3Pe0jVDhk%3D",
     "title": "Europa Universalis IV",
     "salePrice": "$4.49",
@@ -635,18 +648,5 @@
     "steamAppID": "1630110",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=UOQHLXbk86ZUW35EFo3QJ778Gr1d%2BEKEAXvH0bfBAtU%3D"
-  },
-  {
-    "id": "aPgg20gUAkUBDmvBiinGzSLC6wMR86BC55GLvxDqU3E%3D",
-    "title": "Kings Bounty II Lords Edition",
-    "salePrice": "$5.49",
-    "normalPrice": "$54.99",
-    "salePriceNum": 5.49,
-    "savingsNum": 90,
-    "savings": "90% OFF",
-    "thumb": "https://sttc.gamersgate.com/images/product/kings-bounty-ii-lords-edition-new/cover-180-21713e.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=aPgg20gUAkUBDmvBiinGzSLC6wMR86BC55GLvxDqU3E%3D"
   }
 ]
