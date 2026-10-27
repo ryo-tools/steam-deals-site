@@ -312,19 +312,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=fiVBYNCLARYZF7v60kD%2BWHTgaQgUJnMwRHMzs9YCXGM%3D"
   },
   {
-    "id": "rJWN1QRk76H8XFqctyCxHB0dMB62otw5uf8t8AYnD5M%3D",
-    "title": "Metro Exodus - Gold Edition",
-    "salePrice": "$3.59",
-    "normalPrice": "$39.99",
-    "salePriceNum": 3.59,
-    "savingsNum": 91,
-    "savings": "91% OFF",
-    "thumb": "https://images.gog-statics.com/0550913e8ab28c1d22a00498f3acc46b137a1ddf797b89d176357102679157e3_product_tile_117h.webp",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=rJWN1QRk76H8XFqctyCxHB0dMB62otw5uf8t8AYnD5M%3D"
-  },
-  {
     "id": "Rx%2BFAM2mLblZfq6LMMLvY%2Fie%2FKv2I9R1nc3Pe0jVDhk%3D",
     "title": "Europa Universalis IV",
     "salePrice": "$4.49",
@@ -345,7 +332,7 @@
     "salePriceNum": 0.99,
     "savingsNum": 90,
     "savings": "90% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/558420/capsule_231x87.jpg?t=1788374614",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/558420/capsule_231x87.jpg?t=1793035114",
     "steamAppID": "558420",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=n%2F3pjUwkLFRZPWVVqj%2Bct2986bSnYpaOEMkj43D5QYM%3D"
@@ -648,5 +635,18 @@
     "steamAppID": "41070",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=02lP0PBd7DEZcbnOl2q4LXORyMjWCxZRjhtBy2UX1tE%3D"
+  },
+  {
+    "id": "WruSwRar7%2F5BoX5K6G0yXbTA1WvM%2BW5LBaxQcDmrBBI%3D",
+    "title": "Floodland",
+    "salePrice": "$2.99",
+    "normalPrice": "$29.99",
+    "salePriceNum": 2.99,
+    "savingsNum": 90,
+    "savings": "90% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1336180/capsule_231x87.jpg?t=1726480916",
+    "steamAppID": "1336180",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=WruSwRar7%2F5BoX5K6G0yXbTA1WvM%2BW5LBaxQcDmrBBI%3D"
   }
 ]
