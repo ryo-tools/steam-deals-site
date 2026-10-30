@@ -156,19 +156,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=NE6%2F1yUJiXhvRQOK7CwX1CVUV3iIMvv8uz9IDRnJVwk%3D"
   },
   {
-    "id": "cWBF5Fd698PMa5IT0z3iY2rXQBvXWZ%2BEbdVAC6bEcQM%3D",
-    "title": "Battle Academy",
-    "salePrice": "$1.19",
-    "normalPrice": "$14.99",
-    "salePriceNum": 1.19,
-    "savingsNum": 92,
-    "savings": "92% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/287070/capsule_231x87.jpg?t=1756116056",
-    "steamAppID": "287070",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=cWBF5Fd698PMa5IT0z3iY2rXQBvXWZ%2BEbdVAC6bEcQM%3D"
-  },
-  {
     "id": "aoFcioT6K70cKSTlJMowTN8w4GrD%2BwYx2Noe1vX3NaM%3D",
     "title": "Gods Will Fall - Valiant Edition",
     "salePrice": "$1.59",
@@ -206,19 +193,6 @@
     "steamAppID": "526160",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=hnSCdu%2BAlLWvXMAyC17x6gkCwAawTm3ZTtHio8synOU%3D"
-  },
-  {
-    "id": "uXnMCExMuXW0cfPhJ9kFyen1Za6sLc%2BtCXw%2FB0IVgPY%3D",
-    "title": "Distant Worlds: Universe",
-    "salePrice": "$2.39",
-    "normalPrice": "$29.99",
-    "salePriceNum": 2.39,
-    "savingsNum": 92,
-    "savings": "92% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/261470/capsule_231x87.jpg?t=1726821290",
-    "steamAppID": "261470",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=uXnMCExMuXW0cfPhJ9kFyen1Za6sLc%2BtCXw%2FB0IVgPY%3D"
   },
   {
     "id": "p%2B9mcg0dMqYPMYeRrRDaKRq4gQA6UIjncJh0US3Lu%2Bs%3D",
@@ -648,5 +622,31 @@
     "steamAppID": "41070",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=02lP0PBd7DEZcbnOl2q4LXORyMjWCxZRjhtBy2UX1tE%3D"
+  },
+  {
+    "id": "WruSwRar7%2F5BoX5K6G0yXbTA1WvM%2BW5LBaxQcDmrBBI%3D",
+    "title": "Floodland",
+    "salePrice": "$2.99",
+    "normalPrice": "$29.99",
+    "salePriceNum": 2.99,
+    "savingsNum": 90,
+    "savings": "90% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1336180/capsule_231x87.jpg?t=1726480916",
+    "steamAppID": "1336180",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=WruSwRar7%2F5BoX5K6G0yXbTA1WvM%2BW5LBaxQcDmrBBI%3D"
+  },
+  {
+    "id": "r%2FqH2%2BauwmR0sInoc9j%2FPlqo3q8Xk4A6jPBCvDfNM9c%3D",
+    "title": "Scars Above",
+    "salePrice": "$2.99",
+    "normalPrice": "$29.99",
+    "salePriceNum": 2.99,
+    "savingsNum": 90,
+    "savings": "90% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1196090/capsule_231x87.jpg?t=1681942670",
+    "steamAppID": "1196090",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=r%2FqH2%2BauwmR0sInoc9j%2FPlqo3q8Xk4A6jPBCvDfNM9c%3D"
   }
 ]
