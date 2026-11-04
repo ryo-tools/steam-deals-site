@@ -117,6 +117,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=Z2ZoFheREYc2syRgg%2FB4w90EzpnMbADmsLoAhCWvhr4%3D"
   },
   {
+    "id": "cNncHJ81ixT9rBUIyjXiQY5UA3Tpc7sVTxoZkycYEwo%3D",
+    "title": "Strange Brigade - Deluxe Edition",
+    "salePrice": "$3.99",
+    "normalPrice": "$79.99",
+    "salePriceNum": 3.99,
+    "savingsNum": 95,
+    "savings": "95% OFF",
+    "thumb": "https://sttc.gamersgate.com/images/product/strange-brigade-deluxe-edition/cover-180-0ff6d5.jpg",
+    "steamAppID": null,
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=cNncHJ81ixT9rBUIyjXiQY5UA3Tpc7sVTxoZkycYEwo%3D"
+  },
+  {
     "id": "%2BRZp97Om%2B4gy2KG1x05UpBl1ihJAKS768gQ19GuyVFI%3D",
     "title": "Suicide Squad: Kill the Justice League - Deluxe Edition",
     "salePrice": "$4.99",
@@ -611,6 +624,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=n6S1dgnj83ubzQAHnnROqfmlUEGYfvj4I4ODk0akNh4%3D"
   },
   {
+    "id": "FF8WDldNfbV0MOmcwycNS0MxQoluF2fo8QNo8je9Jc4%3D",
+    "title": "ESPER",
+    "salePrice": "$0.71",
+    "normalPrice": "$8.99",
+    "salePriceNum": 0.71,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://sttc.gamersgate.com/images/product/esper/cover-180-3c551d.jpg",
+    "steamAppID": null,
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=FF8WDldNfbV0MOmcwycNS0MxQoluF2fo8QNo8je9Jc4%3D"
+  },
+  {
     "id": "OaSDMeTxakx5nFTHapWIxJsDqGtdAsQUXQv%2FUQGHGT4%3D",
     "title": "Train Valley",
     "salePrice": "$0.79",
@@ -622,31 +648,5 @@
     "steamAppID": "353640",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=OaSDMeTxakx5nFTHapWIxJsDqGtdAsQUXQv%2FUQGHGT4%3D"
-  },
-  {
-    "id": "EeoTIJqSDKoKI52YipVxvQaR332hl7nYKv3epb0zFqc%3D",
-    "title": "Holy Avatar vs Maidens of the Dead",
-    "salePrice": "$0.79",
-    "normalPrice": "$9.99",
-    "salePriceNum": 0.79,
-    "savingsNum": 92,
-    "savings": "92% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/261720/capsule_231x87.jpg?t=1717596196",
-    "steamAppID": "261720",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=EeoTIJqSDKoKI52YipVxvQaR332hl7nYKv3epb0zFqc%3D"
-  },
-  {
-    "id": "z5NI%2FYNmSDgUjoHPoosSeXxMpuYMZjoT679MQQs%2BWA0%3D",
-    "title": "Grotesque Tactics: Evil Heroes",
-    "salePrice": "$0.79",
-    "normalPrice": "$9.99",
-    "salePriceNum": 0.79,
-    "savingsNum": 92,
-    "savings": "92% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/46450/capsule_231x87.jpg?t=1717595888",
-    "steamAppID": "46450",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=z5NI%2FYNmSDgUjoHPoosSeXxMpuYMZjoT679MQQs%2BWA0%3D"
   }
 ]
