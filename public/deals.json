@@ -117,19 +117,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=Z2ZoFheREYc2syRgg%2FB4w90EzpnMbADmsLoAhCWvhr4%3D"
   },
   {
-    "id": "cNncHJ81ixT9rBUIyjXiQY5UA3Tpc7sVTxoZkycYEwo%3D",
-    "title": "Strange Brigade - Deluxe Edition",
-    "salePrice": "$3.99",
-    "normalPrice": "$79.99",
-    "salePriceNum": 3.99,
-    "savingsNum": 95,
-    "savings": "95% OFF",
-    "thumb": "https://sttc.gamersgate.com/images/product/strange-brigade-deluxe-edition/cover-180-0ff6d5.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=cNncHJ81ixT9rBUIyjXiQY5UA3Tpc7sVTxoZkycYEwo%3D"
-  },
-  {
     "id": "%2BRZp97Om%2B4gy2KG1x05UpBl1ihJAKS768gQ19GuyVFI%3D",
     "title": "Suicide Squad: Kill the Justice League - Deluxe Edition",
     "salePrice": "$4.99",
@@ -167,6 +154,19 @@
     "steamAppID": null,
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=YppyX65ewIccg9x10DTaWjY3wUuc9UxGD0UGFOe73Zs%3D"
+  },
+  {
+    "id": "9qKbBs9B2DNqyKM4ZrPfdtCFjIFL%2FkesUTsPY4xgfI4%3D",
+    "title": "Homeworld Remastered Collection and Deserts of Kharak Bundle",
+    "salePrice": "$5.09",
+    "normalPrice": "$84.98",
+    "salePriceNum": 5.09,
+    "savingsNum": 94,
+    "savings": "94% OFF",
+    "thumb": "https://cdn.fanatical.com/production/product/400x225/60f1a9fe-7775-4a5e-beb2-8a2c97d15860.jpeg",
+    "steamAppID": null,
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=9qKbBs9B2DNqyKM4ZrPfdtCFjIFL%2FkesUTsPY4xgfI4%3D"
   },
   {
     "id": "uhZ1XuhrRdMjEB57U0Q0as%2B3D8dJ2fU2C%2BTGZCl6U2g%3D",
@@ -349,6 +349,19 @@
     "steamAppID": "392070",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=fenX6vmr4MDfMG2z9E2Op4RZGJzSLbQRw7xT%2Fhts9Ug%3D"
+  },
+  {
+    "id": "LMph%2FgmubyHUMylnbsgx6zZW4sQBxpiLjvHr5BM8wt0%3D",
+    "title": "BeeFense BeeMastered",
+    "salePrice": "$0.74",
+    "normalPrice": "$9.99",
+    "salePriceNum": 0.74,
+    "savingsNum": 93,
+    "savings": "93% OFF",
+    "thumb": "https://images.greenmangaming.com/336caf946cf446409cf444aeb709c0f2/7c68041bf17a402ab8f86f70407f2540.jpg",
+    "steamAppID": null,
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=LMph%2FgmubyHUMylnbsgx6zZW4sQBxpiLjvHr5BM8wt0%3D"
   },
   {
     "id": "q%2Ba6ztRv2B1vMsOM8FrTi1BtKxdYfo7v%2BmWzh%2BGIBI0%3D",
@@ -635,18 +648,5 @@
     "steamAppID": null,
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=FF8WDldNfbV0MOmcwycNS0MxQoluF2fo8QNo8je9Jc4%3D"
-  },
-  {
-    "id": "OaSDMeTxakx5nFTHapWIxJsDqGtdAsQUXQv%2FUQGHGT4%3D",
-    "title": "Train Valley",
-    "salePrice": "$0.79",
-    "normalPrice": "$9.99",
-    "salePriceNum": 0.79,
-    "savingsNum": 92,
-    "savings": "92% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/353640/capsule_231x87.jpg?t=1759826867",
-    "steamAppID": "353640",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=OaSDMeTxakx5nFTHapWIxJsDqGtdAsQUXQv%2FUQGHGT4%3D"
   }
 ]
