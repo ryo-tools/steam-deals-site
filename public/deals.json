@@ -104,19 +104,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=Kdhb7bEGkEKf6Svg26n27MZD1Xa9XkAvWjTfAdqXnK0%3D"
   },
   {
-    "id": "uu3Jyptw5OyTE0C69x%2Bl2S0UfbfvrlIacP%2BRrgysuwQ%3D",
-    "title": "Zombie Army Trilogy",
-    "salePrice": "$2.24",
-    "normalPrice": "$44.99",
-    "salePriceNum": 2.24,
-    "savingsNum": 95,
-    "savings": "95% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/301640/capsule_231x87.jpg?t=1734453776",
-    "steamAppID": "301640",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=uu3Jyptw5OyTE0C69x%2Bl2S0UfbfvrlIacP%2BRrgysuwQ%3D"
-  },
-  {
     "id": "Z2ZoFheREYc2syRgg%2FB4w90EzpnMbADmsLoAhCWvhr4%3D",
     "title": "Suicide Squad: Kill the Justice League",
     "salePrice": "$3.49",
@@ -167,19 +154,6 @@
     "steamAppID": null,
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=YppyX65ewIccg9x10DTaWjY3wUuc9UxGD0UGFOe73Zs%3D"
-  },
-  {
-    "id": "9qKbBs9B2DNqyKM4ZrPfdtCFjIFL%2FkesUTsPY4xgfI4%3D",
-    "title": "Homeworld Remastered Collection and Deserts of Kharak Bundle",
-    "salePrice": "$5.09",
-    "normalPrice": "$84.98",
-    "salePriceNum": 5.09,
-    "savingsNum": 94,
-    "savings": "94% OFF",
-    "thumb": "https://cdn.fanatical.com/production/product/400x225/60f1a9fe-7775-4a5e-beb2-8a2c97d15860.jpeg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=9qKbBs9B2DNqyKM4ZrPfdtCFjIFL%2FkesUTsPY4xgfI4%3D"
   },
   {
     "id": "uhZ1XuhrRdMjEB57U0Q0as%2B3D8dJ2fU2C%2BTGZCl6U2g%3D",
@@ -648,5 +622,31 @@
     "steamAppID": null,
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=n6S1dgnj83ubzQAHnnROqfmlUEGYfvj4I4ODk0akNh4%3D"
+  },
+  {
+    "id": "OaSDMeTxakx5nFTHapWIxJsDqGtdAsQUXQv%2FUQGHGT4%3D",
+    "title": "Train Valley",
+    "salePrice": "$0.79",
+    "normalPrice": "$9.99",
+    "salePriceNum": 0.79,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/353640/capsule_231x87.jpg?t=1759826867",
+    "steamAppID": "353640",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=OaSDMeTxakx5nFTHapWIxJsDqGtdAsQUXQv%2FUQGHGT4%3D"
+  },
+  {
+    "id": "EeoTIJqSDKoKI52YipVxvQaR332hl7nYKv3epb0zFqc%3D",
+    "title": "Holy Avatar vs Maidens of the Dead",
+    "salePrice": "$0.79",
+    "normalPrice": "$9.99",
+    "salePriceNum": 0.79,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/261720/capsule_231x87.jpg?t=1717596196",
+    "steamAppID": "261720",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=EeoTIJqSDKoKI52YipVxvQaR332hl7nYKv3epb0zFqc%3D"
   }
 ]
