@@ -13,19 +13,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=iCKul1Nfj7mm76qs8vxPeOXRWYaLdsWk9CH%2B5yy5%2BFg%3D"
   },
   {
-    "id": "tB%2FU3yz79BP6yEd3R1DWOSpU0%2BnsXUdHj7qvoKGq%2FmU%3D",
-    "title": "Great Houses of Calderia",
-    "salePrice": "$0.99",
-    "normalPrice": "$24.99",
-    "salePriceNum": 0.99,
-    "savingsNum": 96,
-    "savings": "96% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1812910/bd6763340dffed49728cf7a1a867b408e748dd35/capsule_231x87.jpg?t=1793952901",
-    "steamAppID": "1812910",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=tB%2FU3yz79BP6yEd3R1DWOSpU0%2BnsXUdHj7qvoKGq%2FmU%3D"
-  },
-  {
     "id": "ZhIc5Q1T5xBVBqMFPUF0i8hAdYErlDqd5RhXTIloXyY%3D",
     "title": "Zorro The Chronicles",
     "salePrice": "$1.19",
@@ -338,19 +325,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=fenX6vmr4MDfMG2z9E2Op4RZGJzSLbQRw7xT%2Fhts9Ug%3D"
   },
   {
-    "id": "LMph%2FgmubyHUMylnbsgx6zZW4sQBxpiLjvHr5BM8wt0%3D",
-    "title": "BeeFense BeeMastered",
-    "salePrice": "$0.74",
-    "normalPrice": "$9.99",
-    "salePriceNum": 0.74,
-    "savingsNum": 93,
-    "savings": "93% OFF",
-    "thumb": "https://images.greenmangaming.com/336caf946cf446409cf444aeb709c0f2/7c68041bf17a402ab8f86f70407f2540.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=LMph%2FgmubyHUMylnbsgx6zZW4sQBxpiLjvHr5BM8wt0%3D"
-  },
-  {
     "id": "q%2Ba6ztRv2B1vMsOM8FrTi1BtKxdYfo7v%2BmWzh%2BGIBI0%3D",
     "title": "VelocityUltraDeluxe",
     "salePrice": "$1.04",
@@ -648,5 +622,31 @@
     "steamAppID": "261720",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=EeoTIJqSDKoKI52YipVxvQaR332hl7nYKv3epb0zFqc%3D"
+  },
+  {
+    "id": "z5NI%2FYNmSDgUjoHPoosSeXxMpuYMZjoT679MQQs%2BWA0%3D",
+    "title": "Grotesque Tactics: Evil Heroes",
+    "salePrice": "$0.79",
+    "normalPrice": "$9.99",
+    "salePriceNum": 0.79,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/46450/capsule_231x87.jpg?t=1717595888",
+    "steamAppID": "46450",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=z5NI%2FYNmSDgUjoHPoosSeXxMpuYMZjoT679MQQs%2BWA0%3D"
+  },
+  {
+    "id": "mOBIOdAT774GCiuMm24qKuhQtGDhBHrRVJ4KSWWfhp0%3D",
+    "title": "Evil Genius",
+    "salePrice": "$0.79",
+    "normalPrice": "$9.99",
+    "salePriceNum": 0.79,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3720/capsule_231x87.jpg?t=1721932669",
+    "steamAppID": "3720",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=mOBIOdAT774GCiuMm24qKuhQtGDhBHrRVJ4KSWWfhp0%3D"
   }
 ]
