@@ -7,7 +7,7 @@
     "salePriceNum": 0.59,
     "savingsNum": 96,
     "savings": "96% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1253710/capsule_231x87.jpg?t=1789741967",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1253710/capsule_231x87.jpg?t=1794828645",
     "steamAppID": "1253710",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=iCKul1Nfj7mm76qs8vxPeOXRWYaLdsWk9CH%2B5yy5%2BFg%3D"
@@ -91,32 +91,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=Kdhb7bEGkEKf6Svg26n27MZD1Xa9XkAvWjTfAdqXnK0%3D"
   },
   {
-    "id": "Z2ZoFheREYc2syRgg%2FB4w90EzpnMbADmsLoAhCWvhr4%3D",
-    "title": "Suicide Squad: Kill the Justice League",
-    "salePrice": "$3.49",
-    "normalPrice": "$69.99",
-    "salePriceNum": 3.49,
-    "savingsNum": 95,
-    "savings": "95% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/315210/capsule_231x87.jpg?t=1777940046",
-    "steamAppID": "315210",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=Z2ZoFheREYc2syRgg%2FB4w90EzpnMbADmsLoAhCWvhr4%3D"
-  },
-  {
-    "id": "%2BRZp97Om%2B4gy2KG1x05UpBl1ihJAKS768gQ19GuyVFI%3D",
-    "title": "Suicide Squad: Kill the Justice League - Deluxe Edition",
-    "salePrice": "$4.99",
-    "normalPrice": "$99.99",
-    "salePriceNum": 4.99,
-    "savingsNum": 95,
-    "savings": "95% OFF",
-    "thumb": "https://images.greenmangaming.com/98fb0e76d36341cea0f0ca36ce9c08c6/f08e60d2766549d6b1e89e25444a00e8.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=%2BRZp97Om%2B4gy2KG1x05UpBl1ihJAKS768gQ19GuyVFI%3D"
-  },
-  {
     "id": "o20cExbTDN7QBxyqvrftWtTfjPFrvRqkQ9rEMfpgmMk%3D",
     "title": "Roguebook",
     "salePrice": "$1.37",
@@ -180,19 +154,6 @@
     "steamAppID": "1056690",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=8vhOVf6VQGNdDJgmgdx5GZv1Ava8nLVrSNifeXphh9g%3D"
-  },
-  {
-    "id": "HYQl3X13I81e%2FzCWrBnSZjL%2FXfdhDUajIKh17lvm6rA%3D",
-    "title": "Garfield Kart - Furious Racing",
-    "salePrice": "$1.04",
-    "normalPrice": "$14.99",
-    "salePriceNum": 1.04,
-    "savingsNum": 93,
-    "savings": "93% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085510/capsule_231x87.jpg?t=1790236771",
-    "steamAppID": "1085510",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=HYQl3X13I81e%2FzCWrBnSZjL%2FXfdhDUajIKh17lvm6rA%3D"
   },
   {
     "id": "N7FiYm7XAfXpPTTX2DhmKBJhBAaIoJho03KRcd86vAI%3D",
@@ -648,5 +609,44 @@
     "steamAppID": "3720",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=mOBIOdAT774GCiuMm24qKuhQtGDhBHrRVJ4KSWWfhp0%3D"
+  },
+  {
+    "id": "IuuCHDXqrBuXm0kIstwiLXH1UfELOEiFSLFJX7atltw%3D",
+    "title": "Bridge Constructor Stunts",
+    "salePrice": "$0.79",
+    "normalPrice": "$9.99",
+    "salePriceNum": 0.79,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/419080/capsule_231x87.jpg?t=1717674931",
+    "steamAppID": "419080",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=IuuCHDXqrBuXm0kIstwiLXH1UfELOEiFSLFJX7atltw%3D"
+  },
+  {
+    "id": "kUGb5w5AeaWRGenvNJ9SNoDGpGLT02Hyacm5OEHI%2Bo4%3D",
+    "title": "Paranautical Activity Deluxe Atonement Edition",
+    "salePrice": "$0.79",
+    "normalPrice": "$9.99",
+    "salePriceNum": 0.79,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/250580/capsule_231x87.jpg?t=1785793026",
+    "steamAppID": "250580",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=kUGb5w5AeaWRGenvNJ9SNoDGpGLT02Hyacm5OEHI%2Bo4%3D"
+  },
+  {
+    "id": "AzGLMH3Gv531aHYXJDhRtFtIoAHHTr4YTLyj8YXbI3w%3D",
+    "title": "Trapped Dead: Lockdown",
+    "salePrice": "$0.79",
+    "normalPrice": "$9.99",
+    "salePriceNum": 0.79,
+    "savingsNum": 92,
+    "savings": "92% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/305500/capsule_231x87.jpg?t=1717595955",
+    "steamAppID": "305500",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=AzGLMH3Gv531aHYXJDhRtFtIoAHHTr4YTLyj8YXbI3w%3D"
   }
 ]
