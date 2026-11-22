@@ -195,19 +195,6 @@
     "link": "https://www.cheapshark.com/redirect?dealID=Kdhb7bEGkEKf6Svg26n27MZD1Xa9XkAvWjTfAdqXnK0%3D"
   },
   {
-    "id": "yxLQh%2Btco5aYwAbstaMKBtu69WS4vNlPcoeJJjHylhQ%3D",
-    "title": "RoboCop: Rogue City",
-    "salePrice": "$2.49",
-    "normalPrice": "$49.99",
-    "salePriceNum": 2.49,
-    "savingsNum": 95,
-    "savings": "95% OFF",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1681430/capsule_231x87.jpg?t=1778174302",
-    "steamAppID": "1681430",
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=yxLQh%2Btco5aYwAbstaMKBtu69WS4vNlPcoeJJjHylhQ%3D"
-  },
-  {
     "id": "uhZ1XuhrRdMjEB57U0Q0as%2B3D8dJ2fU2C%2BTGZCl6U2g%3D",
     "title": "Brunch Club",
     "salePrice": "$0.71",
@@ -648,5 +635,18 @@
     "steamAppID": "269310",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=JHRNTiaWaWr4jyM0Uv4BnEPo6RBZioj0kQZVIS5nGOU%3D"
+  },
+  {
+    "id": "0qxGc4Bs6E4BTmUjW4uixAviHP5Vm2K%2F32RIcv7Wlkw%3D",
+    "title": "Sniper: Ghost Warrior 2 Siberian Strike",
+    "salePrice": "$0.74",
+    "normalPrice": "$9.99",
+    "salePriceNum": 0.74,
+    "savingsNum": 93,
+    "savings": "93% OFF",
+    "thumb": "https://sttc.gamersgate.com/images/product/sniper-ghost-warrior-2-siberian-strike/cover-180-b5e594.jpg",
+    "steamAppID": null,
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=0qxGc4Bs6E4BTmUjW4uixAviHP5Vm2K%2F32RIcv7Wlkw%3D"
   }
 ]
