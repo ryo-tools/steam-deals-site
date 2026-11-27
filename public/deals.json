@@ -13,6 +13,19 @@
     "link": "https://www.cheapshark.com/redirect?dealID=tB%2FU3yz79BP6yEd3R1DWOSpU0%2BnsXUdHj7qvoKGq%2FmU%3D"
   },
   {
+    "id": "w%2FQLxBqISBAdwXB7b8Am2KqNv1azTacvJx5k31Jpbo4%3D",
+    "title": "Under The Waves",
+    "salePrice": "$1.19",
+    "normalPrice": "$29.99",
+    "salePriceNum": 1.19,
+    "savingsNum": 96,
+    "savings": "96% OFF",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1975440/fb77a40f8d73f2df0ab7b8902ab0fa910e861ea0/capsule_231x87.jpg?t=1725963350",
+    "steamAppID": "1975440",
+    "storeID": "15",
+    "link": "https://www.cheapshark.com/redirect?dealID=w%2FQLxBqISBAdwXB7b8Am2KqNv1azTacvJx5k31Jpbo4%3D"
+  },
+  {
     "id": "tzdMxaAa0rIjABUDZiwsGPGZNafyzdYdhw%2FsCkCS5Ug%3D",
     "title": "War Hospital",
     "salePrice": "$1.19",
@@ -635,18 +648,5 @@
     "steamAppID": "269310",
     "storeID": "15",
     "link": "https://www.cheapshark.com/redirect?dealID=JHRNTiaWaWr4jyM0Uv4BnEPo6RBZioj0kQZVIS5nGOU%3D"
-  },
-  {
-    "id": "0qxGc4Bs6E4BTmUjW4uixAviHP5Vm2K%2F32RIcv7Wlkw%3D",
-    "title": "Sniper: Ghost Warrior 2 Siberian Strike",
-    "salePrice": "$0.74",
-    "normalPrice": "$9.99",
-    "salePriceNum": 0.74,
-    "savingsNum": 93,
-    "savings": "93% OFF",
-    "thumb": "https://sttc.gamersgate.com/images/product/sniper-ghost-warrior-2-siberian-strike/cover-180-b5e594.jpg",
-    "steamAppID": null,
-    "storeID": "15",
-    "link": "https://www.cheapshark.com/redirect?dealID=0qxGc4Bs6E4BTmUjW4uixAviHP5Vm2K%2F32RIcv7Wlkw%3D"
   }
 ]
